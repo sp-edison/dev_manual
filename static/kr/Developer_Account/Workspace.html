@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>Workspace - EDISON Dev Manual</title>
+    <meta name="description" content="EDISON Developer Manual" />
+    <meta name="author" content="Inho Jeon">
+    <meta charset="UTF-8">
+    <link rel="icon" href="../../themes/daux/img/favicon-blue.png" type="image/x-icon">
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link href='../../themes/daux/css/theme-blue.min.css' rel='stylesheet' type='text/css'>
+            <!-- Tipue Search -->
+        <link href="../../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class=" ">
+    <div class="Columns content">
+    <aside class="Columns__left Collapsible">
+        <button type="button" class="Button Collapsible__trigger">
+            <span class="Collapsible__trigger--bar"></span>
+            <span class="Collapsible__trigger--bar"></span>
+            <span class="Collapsible__trigger--bar"></span>
+        </button>
+
+        <a class="Brand" href="../../index.html">EDISON Dev Manual</a>
+
+    <div class="Search">
+        <svg class="Search__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451 451">
+            <path d="M447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1C384.65 86.2 298.35 0 192.35 0 86.25 0 .05 86.3.05 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2L428.05 447c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zM26.95 192.3c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z"/>
+        </svg>
+        <input type="search" id="tipue_search_input" class="Search__field" placeholder="Search..." autocomplete="on"
+               results=25 autosave=text_search>
+    </div>
+
+        <div class="Collapsible__content">
+            <!-- Navigation -->
+            <ul class='Nav'><li class='Nav__item '><a href="../../kr/Intro.html">Intro</a></li><li class='Nav__item '><a href="../../kr/Linux_Foundation.html">Linux Foundation</a></li><li class='Nav__item Nav__item--open has-children'><a href="../../kr/Developer_Account/Workspace.html" class="folder"><i class="Nav__arrow">&nbsp;</i>Developer Account</a><ul class='Nav'><li class='Nav__item Nav__item--active'><a href="../../kr/Developer_Account/Workspace.html">Workspace</a></li><li class='Nav__item '><a href="../../kr/Developer_Account/Bulb_Server.html">Bulb Server</a></li></ul></li></ul>
+
+            <div class="Links">
+                                    <hr/>
+                                            <a href="https://github.com/sp-edison/dev_manual/archive/master.zip" target="_blank">Download</a>
+                        <br />
+                                            <a href="https://github.com/sp-edison/dev_manual.git" target="_blank">GitHub Repo</a>
+                        <br />
+                                            <a href="https://github.com/sp-edison/dev_manual/issues" target="_blank">Help/Support/Bugs</a>
+                        <br />
+                                            <a href="http://edison.re.kr/" target="_blank">Made by EDISON</a>
+                        <br />
+                                    
+                                    <div class="CodeToggler">
+                        <hr/>
+                                                    <a class="CodeToggler__button CodeToggler__button--main" href="#">Show Code Blocks Inline</a><br>
+                                            </div>
+                
+                            </div>
+        </div>
+    </aside>
+    <div class="Columns__right ">
+        <div class="Columns__right__content">
+            <div class="doc_content">
+                <article class="Page">
+
+    <div class="Page__header">
+        <h1><a href="../../kr/Developer_Account/Workspace.html">Developer Account</a> > <a href="../../kr/Developer_Account/Workspace.html">Workspace</a></h1>
+                <span style="float: left; font-size: 10px; color: gray;">
+            Tuesday, July 24, 2018 12:08 AM        </span>
+                        <span style="float: right; font-size: 10px; color: gray;">
+            <a href="https://github.com/sp-edison/dev_manual/blob/master/kr/02_Developer_Account/01_Workspace.md" target="_blank">Edit on GitHub</a>
+        </span>
+            </div>
+
+
+    <div class="s-content">
+        <p>EDISON 플랫폼에 Science App을 등록하기 위해서는 우선적으로 개발자 권한을 얻어야 합니다. 개발자 권한을 받은 아이디는 Science App을 등록 할 수 있으며, 앱 개발자를 위한 개발 서버인 Bulb 서버에 접근할 수 있는 계정을 제공해 드립니다. Science App 등록시 메타 정보를 입력해야 하며, 이는 웹 포털에서 할 수 있습니다.</p>
+<h1 id="page_section_1">개발자 계정 발급</h1>
+<p><img src="../asset/image/02/workspace.png" alt="EDISON 워크스페이스 메뉴" /></p>
+<p>개발자 계정을 발급 받기 위해서는 EDISON 사이트에서 워크스페이스 요청을 해야합니다. <strong>EDISON 사이트 접속 &gt; My EDISON &gt; 워크스페이스</strong> 에서 <strong>워크스페이스 요청</strong> 을 통해 신청할 수 있습니다.</p>
+<p><img src="../asset/image/02/workspace2.png" alt="EDISON 워크스페이스 메뉴" /></p>
+<h3 id="page_section_2">화면 설명</h3>
+<table>
+<thead>
+<tr>
+<th>메뉴</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(1) 요청 용도</td>
+<td>워크스페이스 요청 용도에 맞게 선택하면 됩니다.</td>
+</tr>
+<tr>
+<td>(2) 사용희망일</td>
+<td>워크스페이스를 사용하고자 하는 기간을 지정하면 됩니다.</td>
+</tr>
+<tr>
+<td>(3) 사용언어</td>
+<td>주로 사용하는 언어를 선택하시면 됩니다. (선택하지 않은 언어도 사용할 수 있습니다.)</td>
+</tr>
+<tr>
+<td><strong>(4) 접속 IP</strong></td>
+<td>접속하는 PC의 IP 주소를 입력하시면 됩니다. (작성한 IP이외의 다른 IP에서는 접속이 불가 합니다. )</td>
+</tr>
+<tr>
+<td>(5) 비고</td>
+<td>워크스페이스 신청시 문의사항이나 요청사항이 있으면 여기에 작성하시면 됩니다.</td>
+</tr>
+<tr>
+<td><strong>(6) 보안 동의</strong></td>
+<td>보안 서약서 내용을 확인하시고 동의해주세요.</td>
+</tr>
+<tr>
+<td><strong>(7) 보안서약서</strong></td>
+<td>(8)에 있는 보안서약서 양식을 다운받아 양식에 맞게 서약서를 작성한 후 보안서약서 파일을 업로드하시면 됩니다.</td>
+</tr>
+<tr>
+<td>(8) 보안서약서 양식</td>
+<td>클릭하시면 보안서약서 양식을 다운 받을 수 있습니다.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="page_section_3">워크스페이스 요청정보</h3>
+<p>사용하고자 하는 프로그램 언어와 접속하고자하는 IP 주소를 입력해야합니다. 여기에 입력한 IP 주소에서만 Bulb 서버에 접속이 가능합니다. 본인이 접속하고자 하는 IP를 정확하게 입력해주셔야 하며, 추가 메뉴를 이용하면 여러 IP를 입력할 수 있습니다.</p>
+<ul>
+<li>
+<a href="http://www.myipaddress.com/what-is-my-ip-address" class="external">자신의 IP 주소 확인하기</a>
+</li>
+</ul>
+<h3 id="page_section_4">보안 동의</h3>
+<p>보안 서약서 약관을 확인 후 사용자 동의를 체크 해야합니다. 보안 서약서 서명 파일을 다운로드 받습니다. 양식의 내용을 작성하고, 출력 후 자필 서명이 들어간 스캔 파일을 업로드 해주셔야 합니다. 작성한 보안서약서 파일을 업로드 합니다. 모든 작성이 완료된 이후 개발자 권한을 요청합니다.</p>
+<h3 id="page_section_5">워크스페이스 발급 확인</h3>
+<p>관리자 승인이 완료되면 개발자 권한을 얻게 되며, <strong>EDISON 사이트 접속 &gt; My EDISON &gt; 워크스페이스</strong> 발급받은 상세정보를 확인할 수 있습니다. Bulb서버 접속에 필요한 아이디와 초기 비밀번호를 확인할 수 있습니다.</p>
+<p><img src="../asset/image/02/workspace3.png" alt="EDISON 워크스페이스 메뉴" /></p>
+<p>해당 내용을 클릭하게 되면 워크스페이스 신청과 관련한 상세 내용을 조회할 수 있습니다.</p>
+<p><img src="../asset/image/02/workspace4.png" alt="EDISON 워크스페이스 메뉴" /></p>
+<p>추가 요청을 통해 접속 IP 추가등의 요청을 관리자에게 할 수 있습니다.</p>
+<p><img src="../asset/image/02/workspace5.png" alt="EDISON 워크스페이스 메뉴" /></p>
+    </div>
+
+        <nav>
+        <ul class="Pager">
+            <li class=Pager--prev><a href="../../kr/Linux_Foundation.html">Previous</a></li>            <li class=Pager--next><a href="../../kr/Developer_Account/Bulb_Server.html">Next</a></li>        </ul>
+    </nav>
+    </article>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <!-- jQuery -->
+    <script src="../../themes/daux/js/jquery-1.11.3.min.js"></script>
+
+    <!-- hightlight.js -->
+    <script src="../../themes/daux/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- JS -->
+    
+    <script src="../../themes/daux/js/daux.js"></script>
+
+            <!-- Tipue Search -->
+        <script type="text/javascript" src="../../tipuesearch/tipuesearch.js"></script>
+
+        <script>
+            window.onunload = function(){}; // force $(document).ready to be called on back/forward navigation in firefox
+            $(function() {
+                tipuesearch({
+                    'base_url': '../../'
+                });
+            });
+        </script>
+    
+</body>
+</html>

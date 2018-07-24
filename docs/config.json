@@ -1,0 +1,30 @@
+{
+    "title": "EDISON Dev Manual",
+    "tagline": "EDISON Developer Manual",
+    "author": "Inho Jeon",
+
+    "languages": {
+        "kr": "한국어",
+        "en": "English"
+    },
+
+    "format": "html",
+    "html": {
+        "theme": "daux-blue",
+        "breadcrumbs": true,
+        "breadcrumb_separator": " > ",
+        "toggle_code": true,
+        "date_modified": true,
+        "inherit_index": true,
+
+        "repo": "sp-edison/dev_manual",
+        "edit_on_github": "sp-edison/dev_manual/blob/master",
+        "links": {
+            "Download": "https://github.com/sp-edison/dev_manual/archive/master.zip",
+            "GitHub Repo": "https://github.com/sp-edison/dev_manual.git",
+            "Help/Support/Bugs": "https://github.com/sp-edison/dev_manual/issues",
+            "Made by EDISON": "http://edison.re.kr/"
+        }
+    }
+
+}
