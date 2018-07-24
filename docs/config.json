@@ -18,7 +18,7 @@
         "inherit_index": true,
 
         "repo": "sp-edison/dev_manual",
-        "edit_on_github": "sp-edison/dev_manual/blob/master",
+        "edit_on_github": "sp-edison/dev_manual/blob/master/docs",
         "links": {
             "Download": "https://github.com/sp-edison/dev_manual/archive/master.zip",
             "GitHub Repo": "https://github.com/sp-edison/dev_manual.git",
