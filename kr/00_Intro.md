@@ -1,11 +1,15 @@
-EDISON 개발자 가이드 Introduction
-=======
 
-본 문서는 EDISON 시뮬레이션 SW 개발을 위한 시뮬레이션 SW 개발 가이드와 웹포털 연동시 필요한 메타 정보를 입력/관리에 대한 내용을 정리한 가이드 입니다. 
+## EDISON 플랫폼 소개
+
+EDISON 플랫폼은 웹 브라우저 접속만으로 C, C++, Fortran, MPI, Python등으로 코딩된 Science Apps(시뮬레이션 SW)을 활용할 수 있는 환경을 제공합니다. 본 문서는 Science App 개발자들을 위한 개발 문서로 EDISON 플랫폼에서 시뮬레이션 SW를 개발하는 방법에 대해서 소개하고자 합니다.
 
 
-2016.8.23, 30일 진행 되었던 KISTI 본관에서 진행한 EDISON 여름학교 발표 자료입니다. 
+## Science App 등록 절차
 
- - [리눅스 기초](https://www.edison.re.kr/documents/23318/462301/EDISON_linux_dev.pdf/d0374697-f952-42a6-9c5d-f27be4f9ece2)
- - [EDISON App 코드 개발 자료](https://www.edison.re.kr/documents/23318/462301/EDISON_SW_dev.pdf/7658da66-bff1-4355-9a45-f1d69873bef9)
+개발자 권한 신청 및 발급
 
+Bulb 서버 접속 - Code upload & Compile - 실행 파일 압축
+
+사이언스 앱스토어 > 앱 관리 > 앱 등록 - 앱 정보 입력 - 실행환경 정보 입력 - 입/출력 포트 정보 입력 - 앱테스트
+
+서비스 요청 -> 관리자 승인 -> 서비스!

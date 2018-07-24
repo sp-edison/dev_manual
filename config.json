@@ -13,11 +13,10 @@
         "breadcrumb_separator": "Chevrons",
         "toggle_code": true,
         "date_modified": true,
-        "float": true,
         "inherit_index": true,
 
-        "repo": "justinwalsh/daux.io",
-        "edit_on_github": "justinwalsh/daux.io/blob/master/docs",
+        "repo": "sp-edison/dev_manual",
+        "edit_on_github": "sp-edison/dev_manual/blob/master",
         "links": {
             "Download": "https://github.com/sp-edison/dev_manual/archive/master.zip",
             "GitHub Repo": "https://github.com/sp-edison/dev_manual.git",
