@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
-    <title>C Language - EDISON Dev Manual</title>
+    <title>C - EDISON Dev Manual</title>
     <meta name="description" content="EDISON Developer Manual">
     <meta name="author" content="Inho Jeon">
     <meta charset="UTF-8">
@@ -45,7 +45,7 @@
 
         <div class="Collapsible__content">
             <!-- Navigation -->
-            <ul class='Nav'><li class='Nav__item '><a href="../../kr/Intro.html">Intro</a></li><li class='Nav__item '><a href="../../kr/Linux_Foundation.html">Linux Foundation</a></li><li class='Nav__item  has-children'><a href="../../kr/Developer_Account/Workspace.html" class="folder"><i class="Nav__arrow">&nbsp;</i>Developer Account</a><ul class='Nav'><li class='Nav__item '><a href="../../kr/Developer_Account/Workspace.html">Workspace</a></li><li class='Nav__item '><a href="../../kr/Developer_Account/Bulb_Server.html">Bulb Server</a></li></ul></li><li class='Nav__item  has-children'><a href="../../kr/Science_App/Science_app.html" class="folder"><i class="Nav__arrow">&nbsp;</i>Science App</a><ul class='Nav'><li class='Nav__item '><a href="../../kr/Science_App/Science_app.html">Science app</a></li></ul></li><li class='Nav__item '><a href="../../kr/EDISON_Programing.html">EDISON Programing</a></li><li class='Nav__item Nav__item--open has-children'><a href="../../kr/Input_Programing/Input_Programing.html" class="folder"><i class="Nav__arrow">&nbsp;</i>Input Programing</a><ul class='Nav'><li class='Nav__item '><a href="../../kr/Input_Programing/Input_Programing.html">Input Programing</a></li><li class='Nav__item Nav__item--active'><a href="../../kr/Input_Programing/C_Language.html">C Language</a></li><li class='Nav__item '><a href="../../kr/Input_Programing/Fortran_language.html">Fortran language</a></li></ul></li><li class='Nav__item  has-children'><a href="../../kr/library/atom.html" class="folder"><i class="Nav__arrow">&nbsp;</i>library</a><ul class='Nav'><li class='Nav__item '><a href="../../kr/library/atom.html">atom</a></li></ul></li></ul>
+            <ul class='Nav'><li class='Nav__item '><a href="../../kr/Intro.html">Intro</a></li><li class='Nav__item '><a href="../../kr/Linux_Foundation.html">Linux Foundation</a></li><li class='Nav__item  has-children'><a href="../../kr/Developer_Account/Workspace.html" class="folder"><i class="Nav__arrow">&nbsp;</i>Developer Account</a><ul class='Nav'><li class='Nav__item '><a href="../../kr/Developer_Account/Workspace.html">Workspace</a></li><li class='Nav__item '><a href="../../kr/Developer_Account/Bulb_Server.html">Bulb Server</a></li></ul></li><li class='Nav__item  has-children'><a href="../../kr/Science_App/Science_app.html" class="folder"><i class="Nav__arrow">&nbsp;</i>Science App</a><ul class='Nav'><li class='Nav__item '><a href="../../kr/Science_App/Science_app.html">Science app</a></li></ul></li><li class='Nav__item '><a href="../../kr/EDISON_Programing.html">EDISON Programing</a></li><li class='Nav__item Nav__item--open has-children'><a href="../../kr/Input_Programing/Input_Programing.html" class="folder"><i class="Nav__arrow">&nbsp;</i>Input Programing</a><ul class='Nav'><li class='Nav__item '><a href="../../kr/Input_Programing/Input_Programing.html">Input Programing</a></li><li class='Nav__item Nav__item--active'><a href="../../kr/Input_Programing/C.html">C</a></li><li class='Nav__item '><a href="../../kr/Input_Programing/Fortran.html">Fortran</a></li><li class='Nav__item '><a href="../../kr/Input_Programing/Python.html">Python</a></li><li class='Nav__item '><a href="../../kr/Input_Programing/R.html">R</a></li><li class='Nav__item '><a href="../../kr/Input_Programing/Octave.html">Octave</a></li></ul></li><li class='Nav__item  has-children'><a href="../../kr/library/atom.html" class="folder"><i class="Nav__arrow">&nbsp;</i>library</a><ul class='Nav'><li class='Nav__item '><a href="../../kr/library/atom.html">atom</a></li></ul></li></ul>
 
             <div class="Links">
                                     <hr/>
@@ -75,11 +75,11 @@
                 <article class="Page">
 
     <div class="Page__header">
-        <h1><a href="../../kr/Input_Programing/Input_Programing.html">Input Programing</a> > <a href="../../kr/Input_Programing/C_Language.html">C Language</a></h1>
+        <h1><a href="../../kr/Input_Programing/Input_Programing.html">Input Programing</a> > <a href="../../kr/Input_Programing/C.html">C</a></h1>
                 <span class="ModifiedDate">
-                        Tuesday, July 31, 2018 7:53 AM        </span>
+                        Tuesday, July 31, 2018 7:59 AM        </span>
                         <span class="EditOn">
-            <a href="https://github.com/sp-edison/dev_manual/blob/master/docs/kr/05_Input_Programing/01_C_Language.md" target="_blank">
+            <a href="https://github.com/sp-edison/dev_manual/blob/master/docs/kr/05_Input_Programing/01_C.md" target="_blank">
                 Edit on GitHub            </a>
         </span>
             </div>
@@ -99,7 +99,7 @@
 </li>
 </ul>
 </blockquote>
-<pre><code>$  git clone https://github.com/sp-edison/c_example_input1.git
+<pre><code class="language-bash">$  git clone https://github.com/sp-edison/c_example_input1.git
 </code></pre>
 <p>다운로드가 완료되면, <code>c_example_input1</code> 폴더가 생성됩니다. 폴더 구성은 다음과 같습니다.</p>
 <pre><code class="language-bash">c_example_input1
@@ -109,7 +109,7 @@
     └─  main.c
 </code></pre>
 <p><code>src</code> 폴더로 이동하여 <code>make all</code> 명령어를 사용하면, 컴파일이 완료됩니다.</p>
-<pre><code>$ cd c_example_input1/src
+<pre><code class="language-bash">$ cd c_example_input1/src
 $ make all
 gcc  -c main.c -o main.o
 Compiled main.c successfully!
@@ -121,12 +121,12 @@ Linking complete!
 <p>예제의 경우 <code>TARGET</code>이 <code>Hello.x</code>로 설정되어 있습니다.</p>
 </blockquote>
 <p>생성된 <code>bin</code> 폴더로 이동하여, 임의의 파일을 입력 파일로 넣고 실행시 에러 없이 실행 종료됨을 확인할 수 있습니다.</p>
-<pre><code>$ cd ../bin
+<pre><code class="language-bash">$ cd ../bin
 $ ./Hello.x -i /home/ino/test.input
 </code></pre>
 <p>이 예제에는 옵션 값이 맞는지 체크하고 옵션 뒤에 붙은 추가 파라미터 값이 파일 경로인지 확인하고 종료하는 프로그램입니다. 옵션 명이 잘못되었거나 입력 파일 경로가 잘못된 경우에는 에러가 발생합니다.</p>
 <p>컴파일 된 파일을 삭제하고 싶은 경우에는 다시 <code>src</code> 폴더로 이동하여 <code>make clean</code> 명령어를 사용하면, 오브젝트 파일과 실행 파일을 삭제하게 됩니다.</p>
-<pre><code>$ cd ../src
+<pre><code class="language-bash">$ cd ../src
 $ make clean
 rm -rf main.o ../bin/Hello.x
 </code></pre>
@@ -216,7 +216,7 @@ int main (int argc, char *argv[]) {
 
         <nav>
         <ul class="Pager">
-            <li class=Pager--prev><a href="../../kr/Input_Programing/Input_Programing.html">Previous</a></li>            <li class=Pager--next><a href="../../kr/Input_Programing/Fortran_language.html">Next</a></li>        </ul>
+            <li class=Pager--prev><a href="../../kr/Input_Programing/Input_Programing.html">Previous</a></li>            <li class=Pager--next><a href="../../kr/Input_Programing/Fortran.html">Next</a></li>        </ul>
     </nav>
     </article>
 
