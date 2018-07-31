@@ -1,0 +1,147 @@
+
+
+# 입력 파일이 1개인 경우
+[[링크] Github에서 보기](https://github.com/sp-edison/c_example_input1)
+
+[[링크] 소스코드 다운받기](https://github.com/sp-edison/c_example_input1/archive/master.zip)
+
+## 예제코드 다운로드 및 실행
+
+Github 사이트에 접속 해서 전체 소스가 압축된 파일을 다운 받거나, ```git clone``` 명령어를 이용해 소스 코드를 받을수 있습니다.
+
+Bulb 서버에 접속 후 아래 명령어를 실행하면, 해당 소스코드를 다운 받을 수 있습니다.
+> Bulb 서버가 아닌 곳에서도 git이 설치되어 있다면, ```git clone``` 명령어를 통해 소스코드를 다운로드 받을 수 있습니다.
+> - [git 설치하기](https://git-scm.com/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EC%84%A4%EC%B9%98)
+
+```
+$  git clone https://github.com/sp-edison/c_example_input1.git
+```
+다운로드가 완료되면, ```c_example_input1``` 폴더가 생성됩니다. 폴더 구성은 다음과 같습니다.
+```bash
+c_example_input1
+│   README.md
+└───src
+    │   Makefile
+    └─  main.c
+```
+
+ ```src``` 폴더로 이동하여 ```make all``` 명령어를 사용하면, 컴파일이 완료됩니다.
+
+```
+$ cd c_example_input1/src
+$ make all
+gcc  -c main.c -o main.o
+Compiled main.c successfully!
+gcc  -o ../bin/Hello.x main.o
+Linking complete!
+```
+
+컴파일이 완료되면 ```c_example_input1``` 폴더 안에 ```bin``` 폴더가 생성되며, ```src/Mamkefile``` 에서 지정한 ```TARGET``` 명으로 실행 파일이 생성됩니다.
+> 예제의 경우 ```TARGET```이 ```Hello.x```로 설정되어 있습니다.
+
+생성된 ```bin``` 폴더로 이동하여, 임의의 파일을 입력 파일로 넣고 실행시 에러 없이 실행 종료됨을 확인할 수 있습니다.
+
+```
+$ cd ../bin
+$ ./Hello.x -i /home/ino/test.input
+```
+
+이 예제에는 옵션 값이 맞는지 체크하고 옵션 뒤에 붙은 추가 파라미터 값이 파일 경로인지 확인하고 종료하는 프로그램입니다. 옵션 명이 잘못되었거나 입력 파일 경로가 잘못된 경우에는 에러가 발생합니다.
+
+컴파일 된 파일을 삭제하고 싶은 경우에는 다시 ```src``` 폴더로 이동하여 ```make clean``` 명령어를 사용하면, 오브젝트 파일과 실행 파일을 삭제하게 됩니다.
+```
+$ cd ../src
+$ make clean
+rm -rf main.o ../bin/Hello.x
+```
+
+## Source code
+
+### main.c
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <getopt.h>
+
+int main (int argc, char *argv[]) {
+    int opt;
+    FILE *fp_input;
+    // Detect the end of the options.
+    while((opt = getopt(argc, argv, "i:")) != -1 ) {
+        switch(opt) {
+            case 'i':
+                fp_input = fopen(optarg,"r");
+                break;
+            default:
+                printf("Usage: %s [-t nsecs] [-n] name\n", argv[0]);
+                exit(1);
+            }
+        }
+
+        // Input file open
+        if(fp_input == NULL){
+            printf("Failed to open input file for -i \n",);
+            exit(1);
+        }
+    }
+
+    // Write an algorithm program in this section.
+
+
+
+    // Input file close
+    fclose(fp_input);
+
+    return 0;
+}
+```
+
+### 주요 함수 설명
+```c
+int getopt(int argc, char * const argv[], const char *optstring);
+```
+입력 파라미터는 ```main()```함수가 받은 파라미터를 전달하는 ```argc```, ```argv``` 와 처리해야하는 옵션 값을 가지고 있는 optstring로 구성되어 있습니다. ```getopt()``` 함수로 처리하고자 하는 옵션을 optstring에 저장해야 하며, 옵션 뒤에 추가 파라미터가 필요한 경우에는 옵션명 뒤에 “:”를 추가합니다. 옵션명은 1개의 문자로 구성되며, 문자열을 옵션으로 받는 경우는 ```getoptlong()``` 함수를 사용하면 됩니다.
+
+> 예를 들어 단일 옵션 ```-h```, ```-v```와 별도 파라미터가 필요한 옵션 ```-i filename```을 체크하고자 한다면 ```"hvi:"``` 값을 옵션 스트링에 넣어주면 됩니다.
+
+이 함수를 사용하기 위해서는 ```#include <getopt.h>``` 또는 ```#include <unistd.h>``` 선언을 해야하며, ```getopt()``` 함수에 필요한 전역 변수도 호출이 됩니다.
+
+- ```optarg``` : 옵션 뒤에 별도의 파라미터 값이 오는 경우, 이를 파싱한 결과 파라미터 값은 ```optarg```에 문자열로 저장됩니다.
+- ```optind``` : 다음번 처리될 옵션의 인덱스이다. 만약 파싱한 옵션이후에 추가적인 파라미터를 받는다면 (예를 들어 입력 파일 이름 같이) 이 값을 활용할 수 있다. ```getopt()```함수는 한 번 호출될 때마다 이 값을 업데이트 합니다.
+- ```opterr``` : 옵션에 문제가 있을 때, 이 값은 0이 아닌 값이되며, ```getopt()```함수가 메시지를 표시하게 됩니다.
+- ```optopt``` : 알 수 없는 옵션을 만났을 때 해당 옵션이 여기에 들어갑니다. (이 때 ```getopt```의 리턴값은 ‘?’가 된다.)
+
+### 주요 코드 설명
+```c
+   while((opt = getopt(argc, argv, "i:")) != -1 ) {
+        switch(opt) {
+            case 'i':
+                fp_input = fopen(optarg,"r");
+                break;
+            default:
+                printf("Usage: %s [-i filepath] name\n", argv[0]);
+                exit(1);
+            }
+        }
+```
+```getopt()``` 함수를 이용하여 입력 인자를 옵션과 추가 파라미터를 읽습니다. ```“i:”```은 ```-i``` 옵션 뒤에 추가 파라미터를 받겠다는 의미 입니다.
+
+> 만약 ```-i, -m``` 옵션 2개를 통해 입력 파일을 받기 원한다면, ```“i:” -> “i:m:”```으로 설정하면 됩니다.
+
+
+지정한 옵션을 ```while``` 문을 통해 루프를 돌면서 옵션을 하나씩 체크합니다. 예제에서 정의한 ```-i``` 옵션의 경우 추가 파라미터를 받겠다고 정의하였으므로, 추가파라미터가 저장되어 있는 변수 optarg에서 값을 읽어오게 됩니다. 정의한 ```-i``` 옵션 이외의 다른 옵션값이 들어오는 경우 default 문에서 예외 처리하였습니다.
+
+그외 더많은 예외 처리가 필요할 수 있겠지만, EDISON 플랫폼 연동에 필요한 예외처리만 하였습니다.
+
+
+```c
+        // Input file open
+     if(fp_input == NULL){
+            printf("Failed to open input file for -i \n",);
+            exit(1);
+        }
+    }
+```
+
+```-i``` 옵션의 추가 파라미터로 입력파일의 경로 값을 읽어오며, 추가 파라미터의 경로가 잘못 되었거나 파일이 아닌 경우에 대한 예외 처리를 하였습니다.

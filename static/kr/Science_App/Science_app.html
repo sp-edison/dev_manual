@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <title>Science app - EDISON Dev Manual</title>
+    <meta name="description" content="EDISON Developer Manual">
+    <meta name="author" content="Inho Jeon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="icon" href="../../themes/daux/img/favicon-blue.png" type="image/x-icon">
+
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    
+    <!-- CSS -->
+    <link href='../../themes/daux/css/theme-blue.min.css' rel='stylesheet' type='text/css'>
+            <!-- Tipue Search -->
+        <link href="../../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+    <script src="../../themes/daux/js/html5shiv-3.7.3.min.js"></script>
+    <![endif]-->
+</head>
+<body class=" ">
+    <div class="Columns content">
+    <aside class="Columns__left Collapsible">
+        <button type="button" class="Button Collapsible__trigger">
+            <span class="Collapsible__trigger__bar"></span>
+            <span class="Collapsible__trigger__bar"></span>
+            <span class="Collapsible__trigger__bar"></span>
+        </button>
+
+        <a class="Brand" href="../../index.html">EDISON Dev Manual</a>
+
+    <div class="Search">
+        <svg class="Search__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451 451">
+            <path d="M447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1C384.65 86.2 298.35 0 192.35 0 86.25 0 .05 86.3.05 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2L428.05 447c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zM26.95 192.3c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z"/>
+        </svg>
+        <input type="search" id="tipue_search_input" class="Search__field" placeholder="Search..." autocomplete="on"
+               results=25 autosave=text_search>
+    </div>
+
+        <div class="Collapsible__content">
+            <!-- Navigation -->
+            <ul class='Nav'><li class='Nav__item '><a href="../../kr/Intro.html">Intro</a></li><li class='Nav__item '><a href="../../kr/Linux_Foundation.html">Linux Foundation</a></li><li class='Nav__item  has-children'><a href="../../kr/Developer_Account/Workspace.html" class="folder"><i class="Nav__arrow">&nbsp;</i>Developer Account</a><ul class='Nav'><li class='Nav__item '><a href="../../kr/Developer_Account/Workspace.html">Workspace</a></li><li class='Nav__item '><a href="../../kr/Developer_Account/Bulb_Server.html">Bulb Server</a></li></ul></li><li class='Nav__item Nav__item--open has-children'><a href="../../kr/Science_App/Science_app.html" class="folder"><i class="Nav__arrow">&nbsp;</i>Science App</a><ul class='Nav'><li class='Nav__item Nav__item--active'><a href="../../kr/Science_App/Science_app.html">Science app</a></li></ul></li><li class='Nav__item '><a href="../../kr/EDISON_Programing.html">EDISON Programing</a></li><li class='Nav__item  has-children'><a href="../../kr/Input_Programing/Input_Programing.html" class="folder"><i class="Nav__arrow">&nbsp;</i>Input Programing</a><ul class='Nav'><li class='Nav__item '><a href="../../kr/Input_Programing/Input_Programing.html">Input Programing</a></li><li class='Nav__item '><a href="../../kr/Input_Programing/C_Language.html">C Language</a></li><li class='Nav__item '><a href="../../kr/Input_Programing/Fortran_language.html">Fortran language</a></li></ul></li><li class='Nav__item  has-children'><a href="../../kr/library/atom.html" class="folder"><i class="Nav__arrow">&nbsp;</i>library</a><ul class='Nav'><li class='Nav__item '><a href="../../kr/library/atom.html">atom</a></li></ul></li></ul>
+
+            <div class="Links">
+                                    <hr/>
+                                            <a href="https://github.com/sp-edison/dev_manual/archive/master.zip" target="_blank">Download</a>
+                        <br />
+                                            <a href="https://github.com/sp-edison/dev_manual.git" target="_blank">GitHub Repo</a>
+                        <br />
+                                            <a href="https://github.com/sp-edison/dev_manual/issues" target="_blank">Help/Support/Bugs</a>
+                        <br />
+                                            <a href="http://edison.re.kr/" target="_blank">Made by EDISON</a>
+                        <br />
+                                                </div>
+
+                                <div class="CodeToggler">
+                        <hr/>
+                                                    <label class="Checkbox">Show Code Blocks                                <input type="checkbox" class="CodeToggler__button--main" checked="checked"/>
+                                <div class="Checkbox__indicator"></div>
+                            </label>
+                                            </div>
+                
+                
+                        </div>
+    </aside>
+    <div class="Columns__right Columns__right--full">
+        <div class="Columns__right__content">
+            <div class="doc_content">
+                <article class="Page">
+
+    <div class="Page__header">
+        <h1><a href="../../kr/Science_App/Science_app.html">Science App</a> > <a href="../../kr/Science_App/Science_app.html">Science app</a></h1>
+                <span class="ModifiedDate">
+                        Tuesday, July 31, 2018 2:21 AM        </span>
+                        <span class="EditOn">
+            <a href="https://github.com/sp-edison/dev_manual/blob/master/docs/kr/03_Science_App/00_Science_app.md" target="_blank">
+                Edit on GitHub            </a>
+        </span>
+            </div>
+
+    <div class="s-content">
+        <h1 id="page_--">사이언스 앱 개요</h1>
+<p>EDISON에서 사용자가 특정 문제를 해석하기 위한 웹기반 시뮬레이션 소프트웨어를 사이언스 앱이라 정의합니다. 단일 시뮬레이션을 실행하는 경우와 사이언스 앱을 순차적으로 실행시키기 위한 워크플로우에서 사용자가 등록한 앱을 활용할 수 있도록 구성 요소를 5가지로 나누었습니다.</p>
+<h2 id="page_---2">사이언스 앱 구성요소</h2>
+<table>
+<thead>
+<tr>
+<th>요소</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>해석기 (Solver)</td>
+<td>과학/기술 분야의 문제를 해결하기 위해 개발한 리눅스 실행 파일이나 스크립트 파일로 입출력 포트를 설정하여 입출력 데이터를 설정 할 수 있습니다. 명령행 인자(Command Line Argument) 방식으로 입력 데이터를 파일 형태로 읽고 result 폴더를 생성해 결과 데이터를 파일 형태로 출력합니다.</td>
+</tr>
+<tr>
+<td>입출력포트 (Input/Output Port)</td>
+<td>해석기의 입력 파일과 출력 파일의 형태를 정의해주는 요소로써 1개의 데이터 타입을 가지게 됩니다. 앱 등록시 데이터 타입 지정하여 생성해야 합니다.</td>
+</tr>
+<tr>
+<td>데이터타입 (Data Type)</td>
+<td>사이언스 앱에서 생성되는 데이터의 형태를 구분하는 요소로써 1개 이상의 편집기와 분석기를 가지고 있습니다.</td>
+</tr>
+<tr>
+<td>편잡기 (Editor)</td>
+<td>웹 GUI를 통해 사용자의 입력을 받아 해석기의 입력 데이터를 만들어주는 요소로써 해석기의 입력 파일을 생성합니다. Liferay의 Portlet 형태로 개발되어야 합니다.</td>
+</tr>
+<tr>
+<td>분석기 (Analyzer)</td>
+<td>해석기를 통해 생성된 결과 데이터를 웹상에서 분석 작업을 할 수 있는 요소로써 해석기 결과 데이터를 파일형태로 읽어 웹상에서 표시해줍니다. Liferay의 Portlet 형태로 개발되어야 합니다.</td>
+</tr>
+</tbody>
+</table>
+<p>사이언스 앱은 웹을 통해 입력 데이터를 처리하는 편집기, 입력된 데이터를 통해 문제를 해석하는 해석기, 해석된 결과 데이터를 웹상에서 분석하는 분석기로 나누어집니다. 해석기는 입출력 형태를 정의하기 위한 입출력 포트를 가지고 있으며, 입출력 포트의 데이터 형태를 지정하는 데이터 타입을 정할 수 있습니다.</p>
+<p><img src="../asset/image/03/image01_app_component.png" alt="사이언스 앱 구성요소 (a) 해석기 (b) 데이터 타입" /></p>
+<p>위 그림은 사이언스 앱 구성요소 중 해석기와 데이터 타입의 구조를 나타낸 그림입니다. (a)해석기는 여러 개의 입출력 포트를 가지고 있으며, 각각의 입출력 포트는 1개의 데이터 타입을 가지게 됩니다. 데이터 타입의 경우 1개 이상의 편집기와 분석기를 가질수 있습니다. 사이언스 앱 개발자는 입출력 포트 등록 시 기존에 등록되어 있는 데이터 타입을 사용할 수 있습니다.</p>
+<h2 id="page_---">사이언스 앱 실행 방식</h2>
+<p><img src="../asset/image/03/image04.png" alt="사이언스 앱 구성" /></p>
+<p>사이언스 앱 실행 방식은 웹 브라우저에서 실행하는 부분과 서버에서 실행하는 부분으로 나눌수 있습니다. 사용자가 EDISON에서 앱을 실행하게 되면, 웹 브라우저에서 편집기를 통해 시뮬레이션 실행에 필요한 입력데이터를 생성할 수 있습니다. 입력데이터는 파일형태로 저장하여 서버로 전송되고 해석기는 명령행 인자(Command Line Argument) 방식으로 입력 파일을 읽어 시뮬레이션을 수행하게 됩니다. 해석기가 실행 중 Sdtout, Stderr 형태로 정보를 출력하게되면 사용자가 웹에서 실행 도중 확인할 수 있습니다. 해석 종료 이후 result 폴더를 생성해 파일 형태로 결과 데이터를 저장하게 됩니다. 웹브라우저에서 분석기는 해석 결과 파일을 읽어 사용자에게 데이터를 가시화할 수 있습니다.</p>
+<h2 id="page_----2">단일 앱 실행 구조</h2>
+<p><img src="../asset/image/03/image02_execution_scenario.png" alt="사이언스 앱 실행 시나리오" />
+위 그림은 사이언스 앱을 실행하는 경우로 1개의 해석기가 2개의 입력 포트와 1개의 출력 포트를 갖는 경우를 도식화한 그림입니다. 2개의 입력 포트에서는 각 포트는 데이터 타입이 설정되어 있고, 데이터 타입이 가지고 있는 편집기를 통해 입력 파일을 생성할 수 있습니다. 출력 포트의 경우에도 포트는 데이터 타입이 설정되어 있고, 데이터 타입이 가지고 있는 분석기를 통해 결과 파일을 확인할 수 있습니다.</p>
+<h2 id="page_---2">워크플로우 실행 구조</h2>
+<p><img src="../asset/image/03/image03_workflow_scenario.png" alt="워크플로우 실행 시나리오" /></p>
+<p>위 그림은 워크플로우를 이용하여 2개의 해석기를 연동하여 실행하는 경우를 도식화한 그림입니다. 워크플로우에서는 해석기 A의 출력 포트의 데이터 타입과 해석기 B의 입력 포트의 데이터 타입이 같은 경우 이를 연결할 수 있으며, 한 번에 실행할 수 있는 기능을 제공하고 있습니다.</p>
+    </div>
+
+        <nav>
+        <ul class="Pager">
+            <li class=Pager--prev><a href="../../kr/Developer_Account/Bulb_Server.html">Previous</a></li>            <li class=Pager--next><a href="../../kr/EDISON_Programing.html">Next</a></li>        </ul>
+    </nav>
+    </article>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <!-- JS -->
+    <script src="../../themes/daux/js/jquery-1.11.3.min.js"></script><script src="../../themes/daux/js/highlight.pack.js"></script><script src="../../themes/daux/js/daux.js"></script>
+            <!-- Tipue Search -->
+        <script type="text/javascript" src="../../tipuesearch/tipuesearch.js"></script>
+
+        <script>
+            window.onunload = function(){}; // force $(document).ready to be called on back/forward navigation in firefox
+            $(function() {
+                tipuesearch({
+                    'base_url': '../../'
+                });
+            });
+        </script>
+    
+</body>
+</html>
