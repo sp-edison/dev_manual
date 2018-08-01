@@ -45,7 +45,7 @@
 
         <div class="Collapsible__content">
             <!-- Navigation -->
-            <ul class='Nav'><li class='Nav__item '><a href="../../kr/Intro.html">Intro</a></li><li class='Nav__item '><a href="../../kr/Linux_Foundation.html">Linux Foundation</a></li><li class='Nav__item  has-children'><a href="../../kr/Developer_Account/Workspace.html" class="folder"><i class="Nav__arrow">&nbsp;</i>Developer Account</a><ul class='Nav'><li class='Nav__item '><a href="../../kr/Developer_Account/Workspace.html">Workspace</a></li><li class='Nav__item '><a href="../../kr/Developer_Account/Bulb_Server.html">Bulb Server</a></li></ul></li><li class='Nav__item  has-children'><a href="../../kr/Science_App/Science_app.html" class="folder"><i class="Nav__arrow">&nbsp;</i>Science App</a><ul class='Nav'><li class='Nav__item '><a href="../../kr/Science_App/Science_app.html">Science app</a></li></ul></li><li class='Nav__item '><a href="../../kr/EDISON_Programing.html">EDISON Programing</a></li><li class='Nav__item Nav__item--open has-children'><a href="../../kr/Input_Programing/Input_Programing.html" class="folder"><i class="Nav__arrow">&nbsp;</i>Input Programing</a><ul class='Nav'><li class='Nav__item '><a href="../../kr/Input_Programing/Input_Programing.html">Input Programing</a></li><li class='Nav__item Nav__item--active'><a href="../../kr/Input_Programing/C.html">C</a></li><li class='Nav__item '><a href="../../kr/Input_Programing/Fortran.html">Fortran</a></li><li class='Nav__item '><a href="../../kr/Input_Programing/Python.html">Python</a></li><li class='Nav__item '><a href="../../kr/Input_Programing/R.html">R</a></li><li class='Nav__item '><a href="../../kr/Input_Programing/Octave.html">Octave</a></li></ul></li><li class='Nav__item  has-children'><a href="../../kr/library/atom.html" class="folder"><i class="Nav__arrow">&nbsp;</i>library</a><ul class='Nav'><li class='Nav__item '><a href="../../kr/library/atom.html">atom</a></li></ul></li></ul>
+            <ul class='Nav'><li class='Nav__item '><a href="../../kr/Intro.html">Intro</a></li><li class='Nav__item '><a href="../../kr/Linux_Foundation.html">Linux Foundation</a></li><li class='Nav__item  has-children'><a href="../../kr/Developer_Account/Workspace.html" class="folder"><i class="Nav__arrow">&nbsp;</i>Developer Account</a><ul class='Nav'><li class='Nav__item '><a href="../../kr/Developer_Account/Workspace.html">Workspace</a></li><li class='Nav__item '><a href="../../kr/Developer_Account/Bulb_Server.html">Bulb Server</a></li></ul></li><li class='Nav__item  has-children'><a href="../../kr/Science_App/Science_app.html" class="folder"><i class="Nav__arrow">&nbsp;</i>Science App</a><ul class='Nav'><li class='Nav__item '><a href="../../kr/Science_App/Science_app.html">Science app</a></li></ul></li><li class='Nav__item '><a href="../../kr/EDISON_Programing.html">EDISON Programing</a></li><li class='Nav__item Nav__item--open has-children'><a href="../../kr/Input_Programing/Input_Programing.html" class="folder"><i class="Nav__arrow">&nbsp;</i>Input Programing</a><ul class='Nav'><li class='Nav__item '><a href="../../kr/Input_Programing/Input_Programing.html">Input Programing</a></li><li class='Nav__item Nav__item--active'><a href="../../kr/Input_Programing/C.html">C</a></li><li class='Nav__item '><a href="../../kr/Input_Programing/Fortran.html">Fortran</a></li><li class='Nav__item '><a href="../../kr/Input_Programing/Python.html">Python</a></li><li class='Nav__item '><a href="../../kr/Input_Programing/R.html">R</a></li><li class='Nav__item '><a href="../../kr/Input_Programing/Octave.html">Octave</a></li></ul></li><li class='Nav__item  has-children'><a href="../../kr/Output_programing/Output_programing.html" class="folder"><i class="Nav__arrow">&nbsp;</i>Output programing</a><ul class='Nav'><li class='Nav__item '><a href="../../kr/Output_programing/Output_programing.html">Output programing</a></li></ul></li><li class='Nav__item  has-children'><a href="../../kr/library/atom.html" class="folder"><i class="Nav__arrow">&nbsp;</i>library</a><ul class='Nav'><li class='Nav__item '><a href="../../kr/library/atom.html">atom</a></li><li class='Nav__item '><a href="../../kr/library/pecsc.html">pecsc</a></li><li class='Nav__item '><a href="../../kr/library/gcc.html">gcc</a></li></ul></li></ul>
 
             <div class="Links">
                                     <hr/>
@@ -77,7 +77,7 @@
     <div class="Page__header">
         <h1><a href="../../kr/Input_Programing/Input_Programing.html">Input Programing</a> > <a href="../../kr/Input_Programing/C.html">C</a></h1>
                 <span class="ModifiedDate">
-                        Tuesday, July 31, 2018 7:59 AM        </span>
+                        Wednesday, August 1, 2018 9:36 AM        </span>
                         <span class="EditOn">
             <a href="https://github.com/sp-edison/dev_manual/blob/master/docs/kr/05_Input_Programing/01_C.md" target="_blank">
                 Edit on GitHub            </a>
@@ -104,9 +104,11 @@
 <p>다운로드가 완료되면, <code>c_example_input1</code> 폴더가 생성됩니다. 폴더 구성은 다음과 같습니다.</p>
 <pre><code class="language-bash">c_example_input1
 │   README.md
-└───src
-    │   Makefile
-    └─  main.c
+├───src
+│   │   Makefile
+│   └─  main.c
+└───inp
+    └─  input.dat
 </code></pre>
 <p><code>src</code> 폴더로 이동하여 <code>make all</code> 명령어를 사용하면, 컴파일이 완료됩니다.</p>
 <pre><code class="language-bash">$ cd c_example_input1/src
@@ -120,9 +122,12 @@ Linking complete!
 <blockquote>
 <p>예제의 경우 <code>TARGET</code>이 <code>Hello.x</code>로 설정되어 있습니다.</p>
 </blockquote>
-<p>생성된 <code>bin</code> 폴더로 이동하여, 임의의 파일을 입력 파일로 넣고 실행시 에러 없이 실행 종료됨을 확인할 수 있습니다.</p>
+<p>생성된 <code>bin</code> 폴더로 이동하여, <code>inp</code>폴더에 있는 <code>input.dat</code>을 입력 파일로 넣고 실행시 에러 없이 실행 종료됨을 확인할 수 있습니다.</p>
 <pre><code class="language-bash">$ cd ../bin
-$ ./Hello.x -i /home/ino/test.input
+$ ./Hello.x -i ../inp/input.dat
+Succeed to open inputfile. Path: ../inp/input.dat
+num
+1000
 </code></pre>
 <p>이 예제에는 옵션 값이 맞는지 체크하고 옵션 뒤에 붙은 추가 파라미터 값이 파일 경로인지 확인하고 종료하는 프로그램입니다. 옵션 명이 잘못되었거나 입력 파일 경로가 잘못된 경우에는 에러가 발생합니다.</p>
 <p>컴파일 된 파일을 삭제하고 싶은 경우에는 다시 <code>src</code> 폴더로 이동하여 <code>make clean</code> 명령어를 사용하면, 오브젝트 파일과 실행 파일을 삭제하게 됩니다.</p>
@@ -137,38 +142,56 @@ rm -rf main.o ../bin/Hello.x
 #include &lt;getopt.h&gt;
 
 int main (int argc, char *argv[]) {
-    int opt;
-    FILE *fp_input;
-    // Detect the end of the options.
-    while((opt = getopt(argc, argv, &quot;i:&quot;)) != -1 ) {
-        switch(opt) {
-            case 'i':
-                fp_input = fopen(optarg,&quot;r&quot;);
-                break;
-            default:
-                printf(&quot;Usage: %s [-t nsecs] [-n] name\n&quot;, argv[0]);
-                exit(1);
-            }
-        }
+	int opt;
+	FILE *fp_input;
+	char buf_string[256];
 
-        // Input file open
-        if(fp_input == NULL){
-            printf(&quot;Failed to open input file for -i \n&quot;,);
-            exit(1);
-        }
-    }
+	// Detect the end of the options.
+	while((opt = getopt(argc, argv, &quot;i:&quot;)) != -1 ) {
+		switch(opt) {
+			case 'i':
+				if((fp_input = fopen(optarg,&quot;r&quot;)) == NULL ) {
+					fprintf(stderr, &quot;Error opening inputfile Path: %s\n&quot;, optarg);
+					return -1;
+				} else {
+					printf(&quot;Succeed to open inputfile Path: %s\n&quot;, optarg);
+				}
+				break;
+			default:
+				printf(&quot;Usage: %s -i [filepath] \n&quot;, argv[0]);
+				return -1;
+		}
+	}
 
-    // Write an algorithm program in this section.
+	// Write an algorithm program in this section.
 
+	while(1) {
+	fscanf(fp_input, &quot;%s&quot;, buf_string);
+		if(feof(fp_input))
+			break;
+		printf(&quot;%s\n&quot;, buf_string);
+	}
 
-
-    // Input file close
-    fclose(fp_input);
-
-    return 0;
+	// Input file close
+	fclose(fp_input);
+	return 0;
 }
+
 </code></pre>
 <h3 id="page_--">주요 함수 설명</h3>
+<pre><code class="language-c">int main (int argc, char *argv[]);
+</code></pre>
+<p>많은 프로그램들은 명령행 인자(Command Line Argument) 방식으로 프로그램 실행을 위한 입력 데이터를 받게됩니다. 이때 필요한 변수가 <code>argc</code>, <code>argv</code>입니다.</p>
+<ul>
+<li>
+<code>argc</code>는, 프로그램을 실행할 때 지정해 준 &quot;명령행 인자&quot;의 &quot;개수&quot;가 저장되는 곳입니다.</li>
+<li>
+<code>argv</code>는, 프로그램을 실행할 때 지정해 준 &quot;명령행 인자의 문자열들&quot;이 실제로 저장되는 배열입니다.</li>
+</ul>
+<blockquote>
+<p>리눅스에서 쓰이는 많은 명령어들도 이러한 형태로 사용되고 있습니다.
+예를들어 <code>cd result</code> 라는 명령어도 <code>cd</code>라는 디렉토리를 이동하는 프로그램과 이 프로그램을 실행하기 위한 입력 데이터 <code>result</code>로 나누어 지고, result 폴더로 이동하라는 명령이 됩니다.</p>
+</blockquote>
 <pre><code class="language-c">int getopt(int argc, char * const argv[], const char *optstring);
 </code></pre>
 <p>입력 파라미터는 <code>main()</code>함수가 받은 파라미터를 전달하는 <code>argc</code>, <code>argv</code> 와 처리해야하는 옵션 값을 가지고 있는 optstring로 구성되어 있습니다. <code>getopt()</code> 함수로 처리하고자 하는 옵션을 optstring에 저장해야 하며, 옵션 뒤에 추가 파라미터가 필요한 경우에는 옵션명 뒤에 “:”를 추가합니다. 옵션명은 1개의 문자로 구성되며, 문자열을 옵션으로 받는 경우는 <code>getoptlong()</code> 함수를 사용하면 됩니다.</p>
@@ -187,31 +210,47 @@ int main (int argc, char *argv[]) {
 <code>optopt</code> : 알 수 없는 옵션을 만났을 때 해당 옵션이 여기에 들어갑니다. (이 때 <code>getopt</code>의 리턴값은 ‘?’가 된다.)</li>
 </ul>
 <h3 id="page_---2">주요 코드 설명</h3>
-<pre><code class="language-c">   while((opt = getopt(argc, argv, &quot;i:&quot;)) != -1 ) {
-        switch(opt) {
-            case 'i':
-                fp_input = fopen(optarg,&quot;r&quot;);
-                break;
-            default:
-                printf(&quot;Usage: %s [-i filepath] name\n&quot;, argv[0]);
-                exit(1);
-            }
-        }
+<pre><code class="language-c">    	...
+    	while((opt = getopt(argc, argv, &quot;i:&quot;)) != -1 ) {
+  		switch(opt) {
+  			case 'i':
+  				if((fp_input = fopen(optarg,&quot;r&quot;)) == NULL ) {
+  					fprintf(stderr, &quot;Error opening inputfile Path: %s\n&quot;, optarg);
+  					return -1;
+  				} else {
+  					printf(&quot;Succeed to open inputfile Path: %s\n&quot;, optarg);
+  				}
+  				break;
+  			default:
+  				printf(&quot;Usage: %s -i [filepath] \n&quot;, argv[0]);
+  				return -1;
+  		}
+  	}
+  	...
 </code></pre>
-<p><code>getopt()</code> 함수를 이용하여 입력 인자를 옵션과 추가 파라미터를 읽습니다. <code>“i:”</code>은 <code>-i</code> 옵션 뒤에 추가 파라미터를 받겠다는 의미 입니다.</p>
+<p><code>while</code>문 안에 있는  <code>opt = getopt(argc, argv, &quot;i:&quot;)</code>은 명령행 인자의 문자열들을 확인해 <code>-i filepath</code> 형태가 있는 경우 <code>i</code>는 <code>opt</code>변수에 <code>filepath</code>는 <code>optarg</code>변수에 저장합니다. 정의한 <code>-i</code> 옵션 이외의 다른 옵션값(ex <code>-m</code>)이 들어오는 경우 default 문에서 예외 처리하였습니다.</p>
 <blockquote>
-<p>만약 <code>-i, -m</code> 옵션 2개를 통해 입력 파일을 받기 원한다면, <code>“i:” -&gt; “i:m:”</code>으로 설정하면 됩니다.</p>
+<p>만약 <code>-i, -m</code> 옵션 2개를 통해 입력 파일을 받기 원한다면, <code>“i:” -&gt; “i:m:”</code>으로 고치고, 아래 <code>switch</code>문의 <code>m</code> case를 추가하면 됩니다.</p>
 </blockquote>
-<p>지정한 옵션을 <code>while</code> 문을 통해 루프를 돌면서 옵션을 하나씩 체크합니다. 예제에서 정의한 <code>-i</code> 옵션의 경우 추가 파라미터를 받겠다고 정의하였으므로, 추가파라미터가 저장되어 있는 변수 optarg에서 값을 읽어오게 됩니다. 정의한 <code>-i</code> 옵션 이외의 다른 옵션값이 들어오는 경우 default 문에서 예외 처리하였습니다.</p>
-<p>그외 더많은 예외 처리가 필요할 수 있겠지만, EDISON 플랫폼 연동에 필요한 예외처리만 하였습니다.</p>
-<pre><code class="language-c">        // Input file open
-     if(fp_input == NULL){
-            printf(&quot;Failed to open input file for -i \n&quot;,);
-            exit(1);
-        }
-    }
+<p><code>-i</code> 옵션 값이 입력된 경우 바로 뒤에 입력한 <code>filepath</code>가 재대로 입력되었는지 확인합니다. 입력된 경로에 파일이 있다면, <code>fp_input = fopen(optarg,&quot;r&quot;)</code>값이 <code>NULL</code>이 아닌 값을 가지게 됩니다. <code>NULL</code>인 경우에는 파일 경로가 잘못 입력된 경우로 이에 대한 에러 로그를 표준 에러(Standard error)를 통해 표시합니다.</p>
+<pre><code class="language-c">fprintf(stderr, &quot;Error opening inputfile Path: %s\n&quot;, optarg);
 </code></pre>
-<p><code>-i</code> 옵션의 추가 파라미터로 입력파일의 경로 값을 읽어오며, 추가 파라미터의 경로가 잘못 되었거나 파일이 아닌 경우에 대한 예외 처리를 하였습니다.</p>
+<p>또한 <code>return -1;</code>을 통해 <code>main</code> 함수의 리턴 값을 0이 아닌 값을 반환하여 정상적으로 종료되지 않았다는 것을 알립니다.</p>
+<pre><code class="language-c">  ...
+  while(1) {
+      fscanf(fp_input, &quot;%s&quot;, buf_string);
+      if(feof(fp_input))
+        break;
+      printf(&quot;%s\n&quot;, buf_string);
+  }
+
+  // Input file close
+  fclose(fp_input);
+  return 0;
+}
+</code></pre>
+<p>정상적으로 입력 파일을 오픈한 경우 오픈한 파일의 내용을 읽어 모니터에 출력합니다. 파일을 읽는 함수 중 <code>fscanf(fp_input, &quot;%s&quot;, buf_string);</code> 함수를 통해 문자열 하나씩 읽어 <code>buf_string</code>에 저장하고 이를 표준출력으로 출력합니다.
+입력 파일을 모두 읽고난 이후 <code>fclose(fp_input);</code>을 통해 파일을 닫고 <code>return 0;</code>을 통해 <code>main</code>함수가 정상적으로 종료됨을 알립니다.</p>
     </div>
 
         <nav>
