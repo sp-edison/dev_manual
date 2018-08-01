@@ -8,7 +8,7 @@
 이후 파일 입출력 함수 이용해 result 폴더안에 파일을 쓰기 모드로 생성하면 됩니다.
 
 
-## C Code
+## C Coded
 ### result 폴더 생성
 
 C 언어의 경우 ```#include <stdlib.h>``` 헤더를 선언하고 ```int system (const char * string);``` 함수를 이용하면 되며, ```result``` 폴더를 생성하는 예제는 아래와 같습니다.
