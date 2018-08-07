@@ -1,36 +1,36 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<!--[if lt IE 7]>       <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
     <title>07  - EDISON Dev Manual</title>
-    <meta name="description" content="EDISON Developer Manual">
+    <meta name="description" content="EDISON Developer Manual" />
     <meta name="author" content="Inho Jeon">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <link rel="icon" href="../themes/daux/img/favicon-blue.png" type="image/x-icon">
-
     <!-- Mobile -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Font -->
-    
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
     <!-- CSS -->
     <link href='../themes/daux/css/theme-blue.min.css' rel='stylesheet' type='text/css'>
             <!-- Tipue Search -->
         <link href="../tipuesearch/tipuesearch.css" rel="stylesheet">
     
     <!--[if lt IE 9]>
-    <script src="../themes/daux/js/html5shiv-3.7.3.min.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 </head>
 <body class=" ">
     <div class="Columns content">
     <aside class="Columns__left Collapsible">
         <button type="button" class="Button Collapsible__trigger">
-            <span class="Collapsible__trigger__bar"></span>
-            <span class="Collapsible__trigger__bar"></span>
-            <span class="Collapsible__trigger__bar"></span>
+            <span class="Collapsible__trigger--bar"></span>
+            <span class="Collapsible__trigger--bar"></span>
+            <span class="Collapsible__trigger--bar"></span>
         </button>
 
         <a class="Brand" href="../index.html">EDISON Dev Manual</a>
@@ -57,37 +57,34 @@
                         <br />
                                             <a href="http://edison.re.kr/" target="_blank">Made by EDISON</a>
                         <br />
-                                                </div>
-
-                                <div class="CodeToggler">
+                                    
+                                    <div class="CodeToggler">
                         <hr/>
-                                                    <label class="Checkbox">Show Code Blocks                                <input type="checkbox" class="CodeToggler__button--main" checked="checked"/>
-                                <div class="Checkbox__indicator"></div>
-                            </label>
+                                                    <a class="CodeToggler__button CodeToggler__button--main" href="#">Show Code Blocks Inline</a><br>
                                             </div>
                 
-                
-                        </div>
+                            </div>
+        </div>
     </aside>
-    <div class="Columns__right Columns__right--full">
+    <div class="Columns__right ">
         <div class="Columns__right__content">
             <div class="doc_content">
                 <article class="Page">
 
     <div class="Page__header">
         <h1><a href="../kr/07_.html">07 </a></h1>
-                <span class="ModifiedDate">
-                        Tuesday, July 31, 2018 6:31 AM        </span>
-                        <span class="EditOn">
-            <a href="https://github.com/sp-edison/dev_manual/blob/master/docs/kr/07_.md" target="_blank">
-                Edit on GitHub            </a>
+                <span style="float: left; font-size: 10px; color: gray;">
+            Monday, August 6, 2018 5:03 PM        </span>
+                        <span style="float: right; font-size: 10px; color: gray;">
+            <a href="https://github.com/sp-edison/dev_manual/blob/master/docs/kr/07_.md" target="_blank">Edit on GitHub</a>
         </span>
             </div>
 
+
     <div class="s-content">
-        <h1 id="page_EDISON--">EDISON 프로그래밍 개요</h1>
+        <h1 id="page_section_1">EDISON 프로그래밍 개요</h1>
 <p>EDISON 플랫폼은 리눅스(CentOS 6)기반에서 동작하고 있으며, 시뮬레이션 SW의 경우 리눅스 환경에서 동작해야 합니다. 컴파일이 필요한 언어인 경우 리눅스(CentOS 6)에서 컴파일이 완료 되어야 합니다. 이를 위해 시뮬레이션 SW 개발자들을 위한 개발자(Bulb) 서버를 제공하고 있으며, Bulb 환경에서 동작하는 실행 파일(or 스크립트)로 개발 되어야 합니다. 입력 데이터를 받는 방식은 명령행 인자(Command Line Argument) 방식을 이용해 입력 데이터를 파일 형태로 읽어야 합니다.</p>
-<h1 id="page_-Software-list">사용가능한 Software list</h1>
+<h1 id="page_section_2">사용가능한 Software list</h1>
 <h2 id="page_module">module</h2>
 <p>App 개발에 필요한 Software 목록은 module 명령어를 통해 조회가능 합니다.</p>
 <blockquote>
@@ -116,7 +113,7 @@
 <td>4.4.7</td>
 <td>(기본값)</td>
 <td><code>gcc</code></td>
-<td><a href="http://gcc.gnu.org/" class="Link--external">http://gcc.gnu.org/</a></td>
+<td><a href="http://gcc.gnu.org/" class="external">http://gcc.gnu.org/</a></td>
 </tr>
 <tr>
 <td>4.9.3</td>
@@ -176,8 +173,17 @@
 </div>
 
     
+    <!-- jQuery -->
+    <script src="../themes/daux/js/jquery-1.11.3.min.js"></script>
+
+    <!-- hightlight.js -->
+    <script src="../themes/daux/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
     <!-- JS -->
-    <script src="../themes/daux/js/jquery-1.11.3.min.js"></script><script src="../themes/daux/js/highlight.pack.js"></script><script src="../themes/daux/js/daux.js"></script>
+    
+    <script src="../themes/daux/js/daux.js"></script>
+
             <!-- Tipue Search -->
         <script type="text/javascript" src="../tipuesearch/tipuesearch.js"></script>
 
