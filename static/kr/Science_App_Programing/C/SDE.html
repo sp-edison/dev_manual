@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <title>SDE - EDISON Dev Manual</title>
+    <meta name="description" content="EDISON Developer Manual">
+    <meta name="author" content="Inho Jeon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="icon" href="../../../themes/daux/img/favicon-blue.png" type="image/x-icon">
+
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    
+    <!-- CSS -->
+    <link href='../../../themes/daux/css/theme-blue.min.css' rel='stylesheet' type='text/css'>
+            <!-- Tipue Search -->
+        <link href="../../../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+    <script src="../../../themes/daux/js/html5shiv-3.7.3.min.js"></script>
+    <![endif]-->
+</head>
+<body class=" ">
+    <div class="Columns content">
+    <aside class="Columns__left Collapsible">
+        <button type="button" class="Button Collapsible__trigger">
+            <span class="Collapsible__trigger__bar"></span>
+            <span class="Collapsible__trigger__bar"></span>
+            <span class="Collapsible__trigger__bar"></span>
+        </button>
+
+        <a class="Brand" href="../../../index.html">EDISON Dev Manual</a>
+
+    <div class="Search">
+        <svg class="Search__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451 451">
+            <path d="M447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1C384.65 86.2 298.35 0 192.35 0 86.25 0 .05 86.3.05 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2L428.05 447c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zM26.95 192.3c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z"/>
+        </svg>
+        <input type="search" id="tipue_search_input" class="Search__field" placeholder="Search..." autocomplete="on"
+               results=25 autosave=text_search>
+    </div>
+
+        <div class="Collapsible__content">
+            <!-- Navigation -->
+            <ul class='Nav'><li class='Nav__item '><a href="../../../kr/Intro.html">Intro</a></li><li class='Nav__item '><a href="../../../kr/Linux_Foundation.html">Linux Foundation</a></li><li class='Nav__item  has-children'><a href="../../../kr/Developer_Account/Workspace.html" class="folder"><i class="Nav__arrow">&nbsp;</i>Developer Account</a><ul class='Nav'><li class='Nav__item '><a href="../../../kr/Developer_Account/Workspace.html">Workspace</a></li><li class='Nav__item '><a href="../../../kr/Developer_Account/Bulb_Server.html">Bulb Server</a></li></ul></li><li class='Nav__item '><a href="../../../kr/Science_app.html">Science app</a></li><li class='Nav__item Nav__item--open has-children'><a href="../../../kr/Science_App_Programing/Intro.html" class="folder"><i class="Nav__arrow">&nbsp;</i>Science App Programing</a><ul class='Nav'><li class='Nav__item '><a href="../../../kr/Science_App_Programing/Intro.html">Intro</a></li><li class='Nav__item  has-children'><a href="../../../kr/Science_App_Programing/Input_programing/Intro.html" class="folder"><i class="Nav__arrow">&nbsp;</i>Input programing</a><ul class='Nav'><li class='Nav__item '><a href="../../../kr/Science_App_Programing/Input_programing/Intro.html">Intro</a></li><li class='Nav__item '><a href="../../../kr/Science_App_Programing/Input_programing/Structured_Data_Editor.html">Structured Data Editor</a></li><li class='Nav__item '><a href="../../../kr/Science_App_Programing/Input_programing/simrc.html">simrc</a></li></ul></li><li class='Nav__item  has-children'><a href="../../../kr/Science_App_Programing/Output_programing/Intro.html" class="folder"><i class="Nav__arrow">&nbsp;</i>Output programing</a><ul class='Nav'><li class='Nav__item '><a href="../../../kr/Science_App_Programing/Output_programing/Intro.html">Intro</a></li><li class='Nav__item '><a href="../../../kr/Science_App_Programing/Output_programing/simpost.html">simpost</a></li></ul></li><li class='Nav__item Nav__item--open has-children'><a href="../../../kr/Science_App_Programing/C/Introduction.html" class="folder"><i class="Nav__arrow">&nbsp;</i>C</a><ul class='Nav'><li class='Nav__item '><a href="../../../kr/Science_App_Programing/C/Introduction.html">Introduction</a></li><li class='Nav__item '><a href="../../../kr/Science_App_Programing/C/Inputfile_Open.html">Inputfile Open</a></li><li class='Nav__item '><a href="../../../kr/Science_App_Programing/C/Inputfile_Open_Case2.html">Inputfile Open Case2</a></li><li class='Nav__item Nav__item--active'><a href="../../../kr/Science_App_Programing/C/SDE.html">SDE</a></li><li class='Nav__item '><a href="../../../kr/Science_App_Programing/C/Output_program.html">Output program</a></li><li class='Nav__item '><a href="../../../kr/Science_App_Programing/C/oneD.html">oneD</a></li></ul></li><li class='Nav__item '><a href="../../../kr/Science_App_Programing/Python.html">Python</a></li><li class='Nav__item  has-children'><a href="../../../kr/Science_App_Programing/Fortran/Inputfile_Open.html" class="folder"><i class="Nav__arrow">&nbsp;</i>Fortran</a><ul class='Nav'><li class='Nav__item '><a href="../../../kr/Science_App_Programing/Fortran/Inputfile_Open.html">Inputfile Open</a></li></ul></li><li class='Nav__item '><a href="../../../kr/Science_App_Programing/R.html">R</a></li><li class='Nav__item '><a href="../../../kr/Science_App_Programing/Octave.html">Octave</a></li></ul></li><li class='Nav__item  has-children'><a href="../../../kr/Datatype/Introduction.html" class="folder"><i class="Nav__arrow">&nbsp;</i>Datatype</a><ul class='Nav'><li class='Nav__item '><a href="../../../kr/Datatype/Introduction.html">Introduction</a></li><li class='Nav__item  has-children'><a href="../../../kr/Datatype/EDITOR/EDITOR.html" class="folder"><i class="Nav__arrow">&nbsp;</i>EDITOR</a><ul class='Nav'><li class='Nav__item '><a href="../../../kr/Datatype/EDITOR/EDITOR.html">EDITOR</a></li><li class='Nav__item '><a href="../../../kr/Datatype/EDITOR/SDE.html">SDE</a></li></ul></li></ul></li><li class='Nav__item '><a href="../../../kr/07_.html">07 </a></li><li class='Nav__item  has-children'><a href="../../../kr/library/atom.html" class="folder"><i class="Nav__arrow">&nbsp;</i>library</a><ul class='Nav'><li class='Nav__item '><a href="../../../kr/library/atom.html">atom</a></li><li class='Nav__item '><a href="../../../kr/library/pecsc.html">pecsc</a></li><li class='Nav__item '><a href="../../../kr/library/gcc.html">gcc</a></li><li class='Nav__item '><a href="../../../kr/library/SIESTA.html">SIESTA</a></li></ul></li></ul>
+
+            <div class="Links">
+                                    <hr/>
+                                            <a href="https://github.com/sp-edison/dev_manual/archive/master.zip" target="_blank">Download</a>
+                        <br />
+                                            <a href="https://github.com/sp-edison/dev_manual.git" target="_blank">GitHub Repo</a>
+                        <br />
+                                            <a href="https://github.com/sp-edison/dev_manual/issues" target="_blank">Help/Support/Bugs</a>
+                        <br />
+                                            <a href="http://edison.re.kr/" target="_blank">Made by EDISON</a>
+                        <br />
+                                                </div>
+
+                                <div class="CodeToggler">
+                        <hr/>
+                                                    <label class="Checkbox">Show Code Blocks                                <input type="checkbox" class="CodeToggler__button--main" checked="checked"/>
+                                <div class="Checkbox__indicator"></div>
+                            </label>
+                                            </div>
+                
+                
+                        </div>
+    </aside>
+    <div class="Columns__right Columns__right--full">
+        <div class="Columns__right__content">
+            <div class="doc_content">
+                <article class="Page">
+
+    <div class="Page__header">
+        <h1><a href="../../../kr/Science_App_Programing/Intro.html">Science App Programing</a> > <a href="../../../kr/Science_App_Programing/C/Introduction.html">C</a> > <a href="../../../kr/Science_App_Programing/C/SDE.html">SDE</a></h1>
+                <span class="ModifiedDate">
+                        Wednesday, August 8, 2018 6:02 AM        </span>
+                        <span class="EditOn">
+            <a href="https://github.com/sp-edison/dev_manual/blob/master/docs/kr/04_Science_App_Programing/03_C/02_SDE.md" target="_blank">
+                Edit on GitHub            </a>
+        </span>
+            </div>
+
+    <div class="s-content">
+        <h2 id="page_SDE-case-study-1">SDE case study 1</h2>
+<p>다음과 같이 숫자형 변수 2개(정수형 변수 1개, 실수형 변수 1개), 리스트형 변수 1개, 3차원 벡터 1개를 받는 SDE를 생성했습니다.</p>
+<p><img src="../../asset/image/04/02/case1.png" alt="Case1" /></p>
+<p>데이터 생성 방식은 다음과 같이 설정했습니다.</p>
+<table>
+<thead>
+<tr>
+<th>KEY</th>
+<th>VALUE</th>
+<th>KEY</th>
+<th>VALUE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>value delimiter</td>
+<td>SPACE</td>
+<td>Vector vracket</td>
+<td>SQUARE_SPACE</td>
+</tr>
+<tr>
+<td>line delimiter</td>
+<td>NULL</td>
+<td>Vector delimiter</td>
+<td>SPACE</td>
+</tr>
+</tbody>
+</table>
+<p>이렇게 설정되어 생성된 입력 파일은 다음과 같습니다.</p>
+<pre><code>INT1 42
+REAL1 42.112
+LIST1 a
+VECTOR1 [ 1 0 0 ]
+</code></pre>
+<h3 id="page_Example">Example</h3>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;
+#include &lt;getopt.h&gt;
+
+typedef struct _inputparam {
+    int int1;       
+    double real1;      
+    char list1;      
+    int vector1[3];    
+} INPUT;
+
+int main (int argc, char* argv[])
+{
+    int opt;
+    FILE *fp_input ;
+    char buf_char[256];
+    INPUT input;
+
+
+    // Detect the end of the options.
+    while((opt = getopt(argc, argv, &quot;i:&quot;)) != -1 ) {
+    	switch(opt) {
+    		case 'i':
+    			if((fp_input = fopen(optarg,&quot;r&quot;)) == NULL ) {
+    				fprintf(stderr, &quot;Error opening inputfile Path: %s\n&quot;, optarg);
+    				return -1;
+    			} else {
+    				printf(&quot;Succeed to open inputfile Path: %s\n&quot;, optarg);
+    			}
+    			break;
+    		default:
+    			printf(&quot;Usage: %s -i [filepath] \n&quot;, argv[0]);
+    			return -1;
+    	}
+    }
+    while(1) {
+        fscanf(fp_input, &quot;%s&quot;, buf_char);
+
+        if(feof(fp_input))
+            break;
+
+        if(!strcmp(buf_char, &quot;INT1&quot;)) {
+            fscanf(fp_input, &quot;%d&quot;, &amp;input.int1);
+        } else if(!strcmp(buf_char, &quot;REAL1&quot;)) {
+            fscanf(fp_input, &quot;%lf&quot;, &amp;input.real1);
+        } else if(!strcmp(buf_char, &quot;LIST1&quot;)) {
+            fscanf(fp_input, &quot;%s&quot;, &amp;input.list1);
+        } else if(!strcmp(buf_char, &quot;VECTOR1&quot;)) {
+            fscanf(fp_input, &quot;%*s %d %d %d %*s&quot;, &amp;input.vector1[0], &amp;input.vector1[1], &amp;input.vector1[2]);
+        } else {
+            printf(&quot;Error Invalid value name :: %s\n&quot;, buf_char);
+            exit(1);
+        }
+    }
+
+
+    printf(&quot;int1: %d \n&quot;, input.int1);
+    printf(&quot;real1: %f \n&quot;, input.real1);
+    printf(&quot;list1: %c \n&quot;, input.list1);
+    printf(&quot;vector1 =  %d %d %d \n&quot;,input.vector1[0], input.vector1[1], input.vector1[2]);
+
+    fclose(fp_input);
+
+    return 0;
+}
+
+</code></pre>
+<blockquote>
+<p>SDE 생성시 데이터 생성 방식을 아래와 같이 설정한다면, 생성되는 입력 파일의 모양이 약간 달라질 것입니다.</p>
+<table>
+<thead>
+<tr>
+<th>KEY</th>
+<th>VALUE</th>
+<th>KEY</th>
+<th>VALUE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&gt;</td>
+<td>value delimiter</td>
+<td>EQUAL</td>
+<td>Vector vracket</td>
+<td>SQUARE_SPACE</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>line delimiter</td>
+<td>SEMICOLON</td>
+<td>Vector delimiter</td>
+<td>SPACE</td>
+</tr>
+</tbody>
+</table>
+<pre><code>INT1 = 42 ;
+REAL1 = 42.112 ;
+LIST1 = a ;
+VECTOR1 = [ 1 0 0 ] ;
+</code></pre>
+<p>추가된 value delimiter와 line delimiter를 고려해 코딩을 해야 합니다. <code>%*s</code> 이용해 변수 이름과 변수 값 사이에 있는 <code>=</code>와 변수 끝에 있는 <code>;</code>을 파일에서 읽기만 하고, 따로 저장하지 않는 부분을 추가하면 됩니다.
+<code>fscanf(fp_input, &quot;%d&quot;, &amp;input.int1);</code> -&gt; <code>fscanf(fp_input, &quot;%*s %d %*s&quot;, &amp;input.int1);</code></p>
+</blockquote>
+    </div>
+
+        <nav>
+        <ul class="Pager">
+            <li class=Pager--prev><a href="../../../kr/Science_App_Programing/C/Inputfile_Open_Case2.html">Previous</a></li>            <li class=Pager--next><a href="../../../kr/Science_App_Programing/C/Output_program.html">Next</a></li>        </ul>
+    </nav>
+    </article>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <!-- JS -->
+    <script src="../../../themes/daux/js/jquery-1.11.3.min.js"></script><script src="../../../themes/daux/js/highlight.pack.js"></script><script src="../../../themes/daux/js/daux.js"></script>
+            <!-- Tipue Search -->
+        <script type="text/javascript" src="../../../tipuesearch/tipuesearch.js"></script>
+
+        <script>
+            window.onunload = function(){}; // force $(document).ready to be called on back/forward navigation in firefox
+            $(function() {
+                tipuesearch({
+                    'base_url': '../../../'
+                });
+            });
+        </script>
+    
+</body>
+</html>

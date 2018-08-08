@@ -7,6 +7,13 @@
 ```linux
 $ ./a.out –i /home/user1/data/input.dat
 ```
+언어별 예제 보기
+
+ - [C](../03_C/00_Inputfile_Open.md)
+ - [Fortran]()
+ - [Python]()
+ - [R]()
+ - [Octave]()
 
 입력 파일이 두개 이상인 경우 각각의 인풋 파일의 옵션은 서로 다른 값을 가져야 한다. 이 경우에서 실행 방식은 다음과 같다.
 
@@ -18,18 +25,20 @@ $ ./a.out –i /home/user1/data/input.dat
  ```
   $ ./a.out –i /home/user1/data/input.dat -m /home/user1/data/block.msh
  ```
- - 3개 이상인 경우에도 서로 다른 입력 옵션을 정하고 이를 받을 수 있도록 코드를 작성하면 된다.
+
+ 언어별 예제 보기
+
+  - [C](../03_C/02_Inputfile_Open_Case2.md)
+  - [Fortran](../04_Fortran/02_Inputfile_Open_Case2.md)
+  - [Python]()
+  - [R]()
+  - [Octave]()
+
+
+3개 이상인 경우에도 서로 다른 입력 옵션을 정하고 이를 받을 수 있도록 코드를 작성하면 된다.
 
 >소스코드에서 [인풋 파일의 절대경로] 처리를 위해 파일 경로를 버퍼에 저장하는 경우, 버퍼 공간을 512byte 잡아야 합니다.
 
 >다음과 같이 프로그래밍 된 시뮬레이션 SW는 EDISON 플랫폼에서 서비스 될 수 습니다.
 > - 입력 파일을 입력 받지 않고 특정 위치의 특정 이름인 입력 파일만 읽는 경우
 > - 사용자 키 입력을 통해 입력 파일의 이름이나 위치를 입력 받는 경우
-
-# 언어별 예제 보기
-
- - [C](../03_C/00_Inputfile_Open.md)
- - [Fortran]()
- - [Python]()
- - [R]()
- - [Octave]()
