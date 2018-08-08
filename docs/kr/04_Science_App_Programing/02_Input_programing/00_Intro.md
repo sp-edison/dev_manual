@@ -28,4 +28,8 @@ $ ./a.out –i /home/user1/data/input.dat
 
 # 언어별 예제 보기
 
- - [C 언어](../03_C/00_Inputfile_Open.md)
+ - [C](../03_C/00_Inputfile_Open.md)
+ - [Fortran]()
+ - [Python]()
+ - [R]()
+ - [Octave]()
