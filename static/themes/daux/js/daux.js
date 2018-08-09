@@ -1,8 +1,4 @@
-/** global localStorage, hljs */
-
-if (hljs) {
-    hljs.initHighlightingOnLoad();
-}
+/** global localStorage */
 
 //Initialize CodeBlock Visibility Settings
 $(function () {
@@ -17,7 +13,7 @@ $(function () {
 
     // If there is no code block we hide the link
     if (!codeBlocks.size()) {
-        toggleCodeSection.addClass('Hidden');
+        toggleCodeSection.addClass('hidden');
         return;
     }
 
@@ -30,29 +26,26 @@ $(function () {
             case 2: // Show code blocks inline
                 toggleCodeBlockBtnFloat.addClass("Button--active");
                 codeBlockView.addClass('Columns__right--float');
-                codeBlockView.removeClass('Columns__right--full');
-                codeBlocks.removeClass('Hidden');
+                codeBlocks.removeClass('hidden');
                 break;
             case 1: // Show code blocks below
                 toggleCodeBlockBtnBelow.addClass("Button--active");
-                toggleCodeBlockBtn.prop('checked', true);
+                toggleCodeBlockBtn.html("Hide Code Blocks");
                 codeBlockView.removeClass('Columns__right--float');
-                codeBlockView.addClass('Columns__right--full');
-                codeBlocks.removeClass('Hidden');
+                codeBlocks.removeClass('hidden');
                 break;
             case 0: // Hidden code blocks
             default:
                 toggleCodeBlockBtnHide.addClass("Button--active");
-                toggleCodeBlockBtn.prop('checked', false);
+                toggleCodeBlockBtn.html("Show Code Blocks");
                 codeBlockView.removeClass('Columns__right--float');
-                codeBlockView.addClass('Columns__right--full');
-                codeBlocks.addClass('Hidden');
+                codeBlocks.addClass('hidden');
                 break;
         }
     }
 
     toggleCodeBlockBtn.click(function() {
-        setCodeBlockStyle(codeBlocks.hasClass('Hidden') ? 1 : 0);
+        setCodeBlockStyle(codeBlocks.hasClass('hidden') ? 1 : 0);
     });
 
     toggleCodeBlockBtnHide.click(function() { setCodeBlockStyle(0); });

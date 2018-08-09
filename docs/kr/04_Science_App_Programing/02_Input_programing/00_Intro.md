@@ -9,8 +9,8 @@ $ ./a.out –i /home/user1/data/input.dat
 ```
 언어별 예제 보기
 
- - [C](../03_C/00_Inputfile_Open.md)
- - [Fortran]()
+ - [C](../03_C/01_Inputfile_Open.md)
+ - [Fortran](../04_Fortran/01_Inputfile_Open.md)
  - [Python]()
  - [R]()
  - [Octave]()
@@ -28,8 +28,8 @@ $ ./a.out –i /home/user1/data/input.dat
 
  언어별 예제 보기
 
-  - [C](../03_C/02_Inputfile_Open_Case2.md)
-  - [Fortran](../04_Fortran/02_Inputfile_Open_Case2.md)
+  - [C](../03_C/02_Multi_Inputfile_Open.md)
+  - [Fortran](../04_Fortran/02_Multi_Inputfile_Open.md)
   - [Python]()
   - [R]()
   - [Octave]()
