@@ -1,36 +1,36 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>       <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>          <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<html class="no-js" lang="en">
 <head>
     <title>atom - EDISON Dev Manual</title>
-    <meta name="description" content="EDISON Developer Manual" />
+    <meta name="description" content="EDISON Developer Manual">
     <meta name="author" content="Inho Jeon">
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <link rel="icon" href="../../themes/daux/img/favicon-blue.png" type="image/x-icon">
+
     <!-- Mobile -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Font -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+    
     <!-- CSS -->
     <link href='../../themes/daux/css/theme-blue.min.css' rel='stylesheet' type='text/css'>
             <!-- Tipue Search -->
         <link href="../../tipuesearch/tipuesearch.css" rel="stylesheet">
     
     <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="../../themes/daux/js/html5shiv-3.7.3.min.js"></script>
     <![endif]-->
 </head>
 <body class=" ">
     <div class="Columns content">
     <aside class="Columns__left Collapsible">
         <button type="button" class="Button Collapsible__trigger">
-            <span class="Collapsible__trigger--bar"></span>
-            <span class="Collapsible__trigger--bar"></span>
-            <span class="Collapsible__trigger--bar"></span>
+            <span class="Collapsible__trigger__bar"></span>
+            <span class="Collapsible__trigger__bar"></span>
+            <span class="Collapsible__trigger__bar"></span>
         </button>
 
         <a class="Brand" href="../../index.html">EDISON Dev Manual</a>
@@ -57,29 +57,32 @@
                         <br />
                                             <a href="http://edison.re.kr/" target="_blank">Made by EDISON</a>
                         <br />
-                                    
-                                    <div class="CodeToggler">
+                                                </div>
+
+                                <div class="CodeToggler">
                         <hr/>
-                                                    <a class="CodeToggler__button CodeToggler__button--main" href="#">Show Code Blocks Inline</a><br>
+                                                    <label class="Checkbox">Show Code Blocks                                <input type="checkbox" class="CodeToggler__button--main" checked="checked"/>
+                                <div class="Checkbox__indicator"></div>
+                            </label>
                                             </div>
                 
-                            </div>
-        </div>
+                
+                        </div>
     </aside>
-    <div class="Columns__right ">
+    <div class="Columns__right Columns__right--full">
         <div class="Columns__right__content">
             <div class="doc_content">
                 <article class="Page">
 
     <div class="Page__header">
         <h1><a href="../../kr/library/atom.html">library</a> > <a href="../../kr/library/atom.html">atom</a></h1>
-                <span style="float: left; font-size: 10px; color: gray;">
-            Wednesday, August 1, 2018 1:23 AM        </span>
-                        <span style="float: right; font-size: 10px; color: gray;">
-            <a href="https://github.com/sp-edison/dev_manual/blob/master/docs/kr/09_library/00_atom.md" target="_blank">Edit on GitHub</a>
+                <span class="ModifiedDate">
+                        Monday, July 30, 2018 9:53 PM        </span>
+                        <span class="EditOn">
+            <a href="https://github.com/sp-edison/dev_manual/blob/master/docs/kr/09_library/00_atom.md" target="_blank">
+                Edit on GitHub            </a>
         </span>
             </div>
-
 
     <div class="s-content">
         <h1 id="page_Atom-4-2-7-_-2-Install">Atom 4.2.7_2 Install</h1>
@@ -101,13 +104,13 @@
 [edison SYSTEM]$ mkdir 4.2.7_2/bin
 [edison atom]$ mkdir download
 </code></pre>
-<h2 id="page_section_2">1. xmlf90-1.5.3 설치</h2>
+<h2 id="page_1-xmlf90-1-5-3-">1. xmlf90-1.5.3 설치</h2>
 <ul>
 <li>
-<a href="https://launchpad.net/xmlf90" class="external">공식 홈페이지</a>
+<a href="https://launchpad.net/xmlf90" class="Link--external">공식 홈페이지</a>
 </li>
 <li>
-<a href="https://launchpad.net/xmlf90/trunk/1.5/+download/xmlf90-1.5.3.tar.gz" class="external">xmlf90-1.5.3 download</a>
+<a href="https://launchpad.net/xmlf90/trunk/1.5/+download/xmlf90-1.5.3.tar.gz" class="Link--external">xmlf90-1.5.3 download</a>
 </li>
 </ul>
 <p>Install</p>
@@ -120,23 +123,23 @@
 [edison xmlf90-1.5.3]$ ls /SYSTEM/atom/util/xmlf90-1.5.4/
 include  lib  share
 </code></pre>
-<h2 id="page_section_3">2. libgridxc-0.8.0 설치</h2>
+<h2 id="page_2-libgridxc-0-8-0-">2. libgridxc-0.8.0 설치</h2>
 <ul>
 <li>
-<a href="https://launchpad.net/libgridxc" class="external">공식 홈페이지</a>
+<a href="https://launchpad.net/libgridxc" class="Link--external">공식 홈페이지</a>
 </li>
 <li>
-<a href="https://launchpad.net/libgridxc/trunk/0.8/+download/libgridxc-0.8.0.tgz" class="external">libxc-4.2.3 download</a>
+<a href="https://launchpad.net/libgridxc/trunk/0.8/+download/libgridxc-0.8.0.tgz" class="Link--external">libxc-4.2.3 download</a>
 </li>
 </ul>
 <p>libgridxc-0.8.0 설치를 위해서는 libxc-4.2.3 설치가 필요</p>
-<h3 id="page_section_4">2.1. libxc-4.2.3 설치</h3>
+<h3 id="page_2-1-libxc-4-2-3-">2.1. libxc-4.2.3 설치</h3>
 <ul>
 <li>
-<a href="http://www.tddft.org/programs/libxc/download" class="external">공식 홈페이지</a>
+<a href="http://www.tddft.org/programs/libxc/download" class="Link--external">공식 홈페이지</a>
 </li>
 <li>
-<a href="http://www.tddft.org/programs/octopus/down.php?file=libxc/4.2.3/libxc-4.2.3.tar.gz" class="external">libxc-4.2.3 download</a>
+<a href="http://www.tddft.org/programs/octopus/down.php?file=libxc/4.2.3/libxc-4.2.3.tar.gz" class="Link--external">libxc-4.2.3 download</a>
 </li>
 </ul>
 <p>libxc-4.2.3 Install</p>
@@ -151,7 +154,7 @@ include  lib  share
 [edison libxc-4.2.3]$ ls /SYSTEM/atom/util/libxc-4.2.3/
 bin  include  lib
 </code></pre>
-<h3 id="page_section_5">2.2. libgridxc-0.8.0 설치</h3>
+<h3 id="page_2-2-libgridxc-0-8-0-">2.2. libgridxc-0.8.0 설치</h3>
 <p>libgridxc-0.8.0 install</p>
 <pre><code class="language-bash">[edison download]$ cd /SYSTEM/atom/download
 [edison download]$ tar xvf libgridxc-0.8.0.tgz
@@ -182,10 +185,10 @@ FC_PARALLEL=mpif90
 <h2 id="page_3-atom-Install">3. atom Install</h2>
 <ul>
 <li>
-<a href="https://departments.icmab.es/leem/siesta/Pseudopotentials/Code/downloads.html" class="external">Atom 공식 홈페이지</a>
+<a href="https://departments.icmab.es/leem/siesta/Pseudopotentials/Code/downloads.html" class="Link--external">Atom 공식 홈페이지</a>
 </li>
 <li>
-<a href="https://departments.icmab.es/leem/siesta/Pseudopotentials/Code/atom-4.2.7_2.tgz" class="external">Atom 4.2.7_2 download</a>
+<a href="https://departments.icmab.es/leem/siesta/Pseudopotentials/Code/atom-4.2.7_2.tgz" class="Link--external">Atom 4.2.7_2 download</a>
 </li>
 </ul>
 <p>/SYSTEM 폴더에 atom 폴더 생성 및 설치 atom 다운로드</p>
@@ -222,17 +225,8 @@ GRIDXC_ROOT=/SYSTEM/atom/util/libgridxc-0.8.0
 </div>
 
     
-    <!-- jQuery -->
-    <script src="../../themes/daux/js/jquery-1.11.3.min.js"></script>
-
-    <!-- hightlight.js -->
-    <script src="../../themes/daux/js/highlight.pack.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-
     <!-- JS -->
-    
-    <script src="../../themes/daux/js/daux.js"></script>
-
+    <script src="../../themes/daux/js/jquery-1.11.3.min.js"></script><script src="../../themes/daux/js/highlight.pack.js"></script><script src="../../themes/daux/js/daux.js"></script>
             <!-- Tipue Search -->
         <script type="text/javascript" src="../../tipuesearch/tipuesearch.js"></script>
 

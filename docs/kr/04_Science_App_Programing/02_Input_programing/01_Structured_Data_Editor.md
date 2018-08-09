@@ -55,7 +55,8 @@ VECTOR1 = [ 1 0 0 ] ;
 
 해석기(Solver)는 입력 파일에서 해석에 필요한 조건을 찾아 해석시 활용해야 합니다. 이것에 해단 언어별 예제는 아래 링크에 있습니다.
 
-
-
- > 추가된 value delimiter와 line delimiter를 고려해 코딩을 해야 합니다. ```%*s``` 이용해 변수 이름과 변수 값 사이에 있는 ```=```와 변수 끝에 있는 ```;```을 파일에서 읽기만 하고, 따로 저장하지 않는 부분을 추가하면 됩니다.
- > ``` fscanf(fp_input, "%d", &input.int1); ``` -> ``` fscanf(fp_input, "%*s %d %*s", &input.int1); ```
+ - [C](../03_C/03_SDE.md)
+ - [Fortran](../04_Fortran/03_SDE.md)
+ - [Python](../05_Python/03_SDE.md)
+ - [R](../06_R/03_SDE.md)
+ - [Octave](../07_Octave/03_SDE.md)

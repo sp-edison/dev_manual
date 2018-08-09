@@ -1,5 +1,5 @@
 
-# Output progrming
+# Output programing
 
 ## result 폴더 생성
 

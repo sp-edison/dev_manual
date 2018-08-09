@@ -11,9 +11,9 @@ $ ./a.out –i /home/user1/data/input.dat
 
  - [C](../03_C/01_Inputfile_Open.md)
  - [Fortran](../04_Fortran/01_Inputfile_Open.md)
- - [Python]()
- - [R]()
- - [Octave]()
+ - [Python](../05_Python/01_Inputfile_Open.md)
+ - [R](../06_R/01_Inputfile_Open.md)
+ - [Octave](../07_Octave/01_Inputfile_Open.md)
 
 입력 파일이 두개 이상인 경우 각각의 인풋 파일의 옵션은 서로 다른 값을 가져야 한다. 이 경우에서 실행 방식은 다음과 같다.
 
@@ -30,7 +30,7 @@ $ ./a.out –i /home/user1/data/input.dat
 
   - [C](../03_C/02_Multi_Inputfile_Open.md)
   - [Fortran](../04_Fortran/02_Multi_Inputfile_Open.md)
-  - [Python]()
+  - [Python](../05_Python/02_Multi_Inputfile_Open.md)
   - [R]()
   - [Octave]()
 

@@ -1,36 +1,36 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>       <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>          <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<html class="no-js" lang="en">
 <head>
     <title>Introduction - EDISON Dev Manual</title>
-    <meta name="description" content="EDISON Developer Manual" />
+    <meta name="description" content="EDISON Developer Manual">
     <meta name="author" content="Inho Jeon">
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <link rel="icon" href="../../../themes/daux/img/favicon-blue.png" type="image/x-icon">
+
     <!-- Mobile -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Font -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+    
     <!-- CSS -->
     <link href='../../../themes/daux/css/theme-blue.min.css' rel='stylesheet' type='text/css'>
             <!-- Tipue Search -->
         <link href="../../../tipuesearch/tipuesearch.css" rel="stylesheet">
     
     <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="../../../themes/daux/js/html5shiv-3.7.3.min.js"></script>
     <![endif]-->
 </head>
 <body class=" ">
     <div class="Columns content">
     <aside class="Columns__left Collapsible">
         <button type="button" class="Button Collapsible__trigger">
-            <span class="Collapsible__trigger--bar"></span>
-            <span class="Collapsible__trigger--bar"></span>
-            <span class="Collapsible__trigger--bar"></span>
+            <span class="Collapsible__trigger__bar"></span>
+            <span class="Collapsible__trigger__bar"></span>
+            <span class="Collapsible__trigger__bar"></span>
         </button>
 
         <a class="Brand" href="../../../index.html">EDISON Dev Manual</a>
@@ -57,41 +57,44 @@
                         <br />
                                             <a href="http://edison.re.kr/" target="_blank">Made by EDISON</a>
                         <br />
-                                    
-                                    <div class="CodeToggler">
+                                                </div>
+
+                                <div class="CodeToggler">
                         <hr/>
-                                                    <a class="CodeToggler__button CodeToggler__button--main" href="#">Show Code Blocks Inline</a><br>
+                                                    <label class="Checkbox">Show Code Blocks                                <input type="checkbox" class="CodeToggler__button--main" checked="checked"/>
+                                <div class="Checkbox__indicator"></div>
+                            </label>
                                             </div>
                 
-                            </div>
-        </div>
+                
+                        </div>
     </aside>
-    <div class="Columns__right ">
+    <div class="Columns__right Columns__right--full">
         <div class="Columns__right__content">
             <div class="doc_content">
                 <article class="Page">
 
     <div class="Page__header">
         <h1><a href="../../../kr/Science_App_Programing/Intro.html">Science App Programing</a> > <a href="../../../kr/Science_App_Programing/C/Introduction.html">C</a> > <a href="../../../kr/Science_App_Programing/C/Introduction.html">Introduction</a></h1>
-                <span style="float: left; font-size: 10px; color: gray;">
-            Wednesday, August 8, 2018 10:50 PM        </span>
-                        <span style="float: right; font-size: 10px; color: gray;">
-            <a href="https://github.com/sp-edison/dev_manual/blob/master/docs/kr/04_Science_App_Programing/03_C/00_Introduction.md" target="_blank">Edit on GitHub</a>
+                <span class="ModifiedDate">
+                        Thursday, August 9, 2018 5:11 AM        </span>
+                        <span class="EditOn">
+            <a href="https://github.com/sp-edison/dev_manual/blob/master/docs/kr/04_Science_App_Programing/03_C/00_Introduction.md" target="_blank">
+                Edit on GitHub            </a>
         </span>
             </div>
 
-
     <div class="s-content">
-        <h1 id="page_section_1">C 언어</h1>
-<h2 id="page_section_2">리눅스에서 gcc로 c언어 컴파일하기</h2>
+        <h1 id="page_C-">C 언어</h1>
+<h2 id="page_-gcc-c-">리눅스에서 gcc로 c언어 컴파일하기</h2>
 <p>리눅스에서 hello world를 출력하는 간단한 C 코드를 컴파일 하고 실행하는 예제 링크 입니다.
-<a href="http://ibabo.tistory.com/87" class="external">리눅스에서 gcc로 c언어 컴파일하기</a></p>
+<a href="http://ibabo.tistory.com/87" class="Link--external">리눅스에서 gcc로 c언어 컴파일하기</a></p>
 <p>간단한 코드의 경우 gcc 명령어를 바로 사용하여 빌드 할 수 있습니다. 하지만 소스코드가 많은 경우 일일이 gcc 명령어를 통해 컴파일 하는것은 무리가 있습니다. make 명령어를 사용하면 효과적으로 소스코드를 빌드 할 수 있습니다.</p>
-<p><a href="http://snowdeer.github.io/c++/2017/09/06/how-to-use-make-utility/" class="external">make를 이용한 빌드 방법</a></p>
+<p><a href="http://snowdeer.github.io/c++/2017/09/06/how-to-use-make-utility/" class="Link--external">make를 이용한 빌드 방법</a></p>
 <blockquote>
 <p>본 개발자 문서에서는 Makefile을 통해 C,Fortran 코드를 빌드 할 수 있는 예제 소스를 제공하고 있습니다.</p>
 </blockquote>
-<h2 id="page_section_3">gcc 컴파일러</h2>
+<h2 id="page_gcc-">gcc 컴파일러</h2>
 <p>EDISON 서버에 기본으로 설치되어 있는 gcc version 4.4.7 버전입니다. <code>gcc -v</code> 명령어를 통해 버전을 확인할 수 있습니다.</p>
 <pre><code class="language-bash">[edison@edison ~]$ gcc -v
 Using built-in specs.
@@ -137,17 +140,8 @@ gcc version 5.3.0 (GCC)
 </div>
 
     
-    <!-- jQuery -->
-    <script src="../../../themes/daux/js/jquery-1.11.3.min.js"></script>
-
-    <!-- hightlight.js -->
-    <script src="../../../themes/daux/js/highlight.pack.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-
     <!-- JS -->
-    
-    <script src="../../../themes/daux/js/daux.js"></script>
-
+    <script src="../../../themes/daux/js/jquery-1.11.3.min.js"></script><script src="../../../themes/daux/js/highlight.pack.js"></script><script src="../../../themes/daux/js/daux.js"></script>
             <!-- Tipue Search -->
         <script type="text/javascript" src="../../../tipuesearch/tipuesearch.js"></script>
 

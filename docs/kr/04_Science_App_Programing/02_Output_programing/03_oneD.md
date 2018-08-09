@@ -22,8 +22,8 @@ oneD 파일은 [OSPPlotViewer 분석기]()를 통해 가시화 할 수 있습니
 
 언어별 예제 보기
 
- - [C](../03_C/04_oneD.md)
- - [Fortran]()
- - [Python]()
- - [R]()
- - [Octave]()
+ - [C](../03_C/05_oneD.md)
+ - [Fortran](../04_Fortran/05_oneD.md)
+ - [Python](../05_Python/05_oneD.md)
+ - [R](../06_R/05_oneD.md)
+ - [Octave](../07_Octave/05_oneD.md)

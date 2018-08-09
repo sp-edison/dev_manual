@@ -13,8 +13,7 @@
 
 $$ y = a * sin(bx+c)+d $$
 
-
-입력 파일의 경우에는 변수와 값 구분자를 ' = '을 사용하였으며, 변수와 변수 사이를 구분하기 위해 ' ;\n '를 사용하였습니다. 파일로 입력을 받으며, 샘플 입력 파일은 아래와 같으며, **inp** 폴더에 **input.dat** 로 저장되어 있습니다.
+입력 파일의 경우에는 Value delimiter를 ' = '을 사용하였으며, Line delimiter를 구분하기 위해 ' ;\n '를 사용하였습니다. 파일로 입력을 받으며, 샘플 입력 파일은 아래와 같으며, **inp** 폴더에 **input.dat** 로 저장되어 있습니다.
 
 ```
 a = 1 ;
@@ -208,24 +207,27 @@ int main (int argc, char *argv[]) {
 - 결과 데이터를 저장할 ```result```  폴더를 생성하는 부분이며, result 폴더안에 ```result.oneD``` 파일을 생성하고 쓰기모드로 오픈하여 ```fp_out``` 파일포인터에 넣어주었습니다.
 
 ```c
-      fprintf(fp_out,"#NumField: 1\n");
-      fprintf(fp_out,"#LabelX: time, LabelY: a*sine(x+b) \n");
-      fprintf(fp_out,"#Field1: a=%d b=%f,NumPoint:%d\n", int1, real1, SIZE);
-
+    fprintf(fp_output,"#NumField: 1\n");
+    fprintf(fp_output,"#LabelX: time, LabelY: a*sine(bx+c)+d \n");
+    fprintf(fp_output,"#Field1: a=%f b=%f c=%f d=%f,NumPoint:%d\n", input.a, input.b, input.c, input.d, SIZE);
 ```
-- oneD 파일의 헤더 부분의 내용을 입력해주는 부분이다. [oneD 데이터 구조](../02_Output_programing/03_oneD.md)에 대한 자세한 설명은 해당 페이지 참조하시기 바랍니다.
-- 필드가 1개이며, x라벨이 time y라벨이 a*sine(x+b)이고 필드의 이름은 사용자가 입력한 a,b 값을 나타내고 있습니다.
+
+- oneD 파일의 헤더 부분의 내용을 생성합니다. [oneD 데이터 구조](../02_Output_programing/03_oneD.md)에 대한 자세한 설명은 해당 페이지를 참조하시기 바랍니다.
+- 필드가 1개이며, x라벨이 time y라벨이 a * sin(bx+c)+d 이고 필드의 이름은 사용자가 입력한 a,b,c,d 값을 나타내고 있습니다.
+
 
 ```c
+      ...
       double x,y;
       int t;
+      ...
       for(t=0; t< SIZE; t++) {
-            x = (4*PI * t )/SIZE -2*PI;
-            y = int1*sin( x - real1 );
-            fprintf(fp_out,"%10.3f  %10.3f\n",x, y);
+          x = (4*PI * t)/SIZE -2*PI;
+          y = input.a*(sin( input.b*x +input.c)) +input.d;
+          fprintf(fp_output, "%10.3f  %10.3f\n", x, y);
       }
 
       fclose(fp_out);
 ```
- - t=0 부터 SIZE 까지 for문을 수행하게됩니다. 있대 $$-2*pi$$에서 $$2*pi$$ 까지 SIZE등분으로 일정하게 나눈 값을 x에 저장하고, 이 x값에 대한 $$a*sin(t+b)$$ 결과 값을 y에 저장한 뒤 ```fprintf()```를 이용해 result.oneD 파일에 쓰게됩니다.
+ - t=0 부터 SIZE 까지 for문을 수행하게됩니다. 있대 $$-2*pi$$에서 $$2*pi$$ 까지 SIZE등분으로 일정하게 나눈 값을 x에 저장하고, 이 x값에 대한 $$y=a*sin(bx+c)+d$$ 결과 값을 y에 저장한 뒤 ```fprintf()```를 이용해 result.oneD 파일에 쓰게됩니다.
 - 이때 저장하는 데이터의 규칙은 ```%10.3f```값을 주어 10진수 형태로 총 10자리를 가지고, 소수점 아래로는 3자리를 가지도록 저장하였습니다.
