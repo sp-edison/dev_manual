@@ -32,7 +32,7 @@ R/3.3.2                 gcc/5.5.0               intel/mkl               openmpi-
 R/3.3.3(default)        gnuplot/4.6.3           mpi/gnu/openmpi-1.6.5   openmpi-x86_64
 gamess/gamess           gnuplot/5.0.6(default)  mpi/intel/mpich-1.2.7p1 petsc/3.9.3
 gcc/4.9.4               intel/2018              mpich-x86_64            python/3.6.3
-gcc/5.3.0               intel/2018-mpi          octave/4.0.3
+gcc/5.3.0               intel/201 8-mpi          octave/4.0.3
 gcc/5.4.0               intel/intel_11          openmpi/2.1.2
 [edison@bulb ~]$ module load gcc/5.3.0
 [edison@bulb ~]$ gfortran -v
