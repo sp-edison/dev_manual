@@ -20,22 +20,40 @@ $  git clone https://github.com/sp-edison/r_example_input1.git
 ```bash
 r_example_input1
 │   README.md
+│   simrc
 └───run.r
 ```
+### 실행하기
 
-R의 경우 Script를 실행하는 형태로 별다른 컴파일 과정이 필요 없다. 하지만 리눅스 명령어 chmod 명령어를 이용해 그룹과 일반 사용자에게 읽기와 실행 권한을 주어야 합니다.  ```run.r```가 실행 파일인 경우 ```chmod u+x run.r``` 를 리눅스 상에서 실행하면 됩니다.
+
+source 명령어를 통해 simrc에 있는 명령어를 실행합니다.
+
+  > simrc에는 R 모듈을 추가하는 명령어가 있습니다.
 
 ```bash
-$ chmod u+x run.r
+$ source simrc
+```
+
+R의 경우 Script를 실행하는 형태로 별다른 컴파일 과정이 필요 없습니다. 하지만 리눅스 명령어 chmod 명령어를 이용해 실행 권한을 주어야 합니다.  ```run.r```가 실행 파일인 경우 ```chmod +x run.r``` 를 리눅스 상에서 실행하면 됩니다.
+
+```bash
+$ chmod +x run.r
 $ ./run.r -i /home/ino/test.input
 input file = /home/ino/test.input
 ```
 
 ## Source Code
+### simrc
+
+```bash
+module load R/3.3.2
+```
+```module load``` 명령어를 통해 R 모듈을 추가합니다.
+
 ### run.r
 
 ```r
-#!/SYSTEM/R/3.3.3/bin/Rscript
+#!/usr/bin/env Rscript
 
 
 library(optparse)
@@ -61,11 +79,12 @@ print(inputfile);
 #### 입력 인자 읽기
 
 ```
-#!/SYSTEM/R/3.3.3/bin/Rscript
+#!/usr/bin/env Rscript
 ```
-```#!``` 을 통해 이 스크립트를 실행시켜줄 ```Rscript``` 프로그램의 경로를 지정하여 필요한 모듈을 불러옵니다.
-EDISON 서버에서의 ```R``` 설치 위치는 ```/SYSTEM/R```에 버전 별로 정리되어 있습니다. 사용하고자하는 버전에 따라 ```Rscript``` 경로를 지정하면 됩니다.
- > [Shebang과 env에 대한 설명](http://blog.gaerae.com/2015/10/what-is-the-preferred-bash-shebang.html)
+```#!``` 을 통해 이 스크립트를 실행하는 파일이 ```Rscript```임을 지정합니다.
+
+> EDISON 서버에서의 ```R``` 설치 위치는 ```/SYSTEM/R```에 버전 별로 정리되어 있습니다.
+> ```module load``` 명령어를 통해 원하는 버전의 R 모듈을 추가할 수 있습니다.
 
 ```r
 library(optparse)
