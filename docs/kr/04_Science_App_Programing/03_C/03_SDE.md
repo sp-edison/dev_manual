@@ -5,7 +5,7 @@ C언어로 SDE에서 생성된 입력 파일을 읽는 방법을 설명하고자
 
 관련 문서 링크
 - [SDE 프로그래밍 방법 개요](../02_Input_programing/01_Structured_Data_Editor.md)
-- [SDE 데이터 타입 생성하기](../../05_Datatype/01_EDITOR/01_SDE.md)
+- [SDE 데이터 타입 생성하기](../../06_EDITOR/01_SDE.md)
 
 다음과 같이 숫자형 변수 2개(정수형 변수 1개, 실수형 변수 1개), 리스트형 변수 1개, 3차원 벡터 1개를 받는 SDE를 생성했습니다.
 
