@@ -1,6 +1,6 @@
 # 실행환경 정보 입력
 
-![실행환경정보 등록](../asset/image/08/00/image4.png)
+![실행환경정보 등록](../asset/image/08/image4.png)
 
 
 (1) 업로드 한 실행 파일 명을 입력 이 실행파일명을 바탕으로 앱 테스트 및 시뮬레이션 실행을 하므로 틀리지 않게 작성해야 한다.실행 파일명을 파일 명으로 작성합니다.
@@ -34,4 +34,5 @@
  > - ```src``` 폴더 안에서 ```make all``` 커맨드 입력시, 빌드가 수행되며, 실행파일은 ```bin``` ```bin``` 폴더에 저장되야 합니다.
  >
  >[자동 빌드 예제 코드 C언어 -  sin() 함수 출력](https://github.com/sp-edison/c_example_oneD)
+ >
  >[자동 빌드 예제 코드 Fortran언어 -  sin() 함수 출력](https://github.com/sp-edison/fortran_example_oneD)
