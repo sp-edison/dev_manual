@@ -24,6 +24,9 @@
             "Help/Support/Bugs": "https://github.com/sp-edison/dev_manual/issues",
             "Made by EDISON": "http://edison.re.kr/"
         }
+    },
+    "ignore": {
+      "files": ["note.md"],
+      "folders": ["09_library"]
     }
-
 }

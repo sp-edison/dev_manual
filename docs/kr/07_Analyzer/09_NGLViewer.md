@@ -1,6 +1,6 @@
 # NGL
 
-WebGL 기반 분자 가시화 라이브러리로 pdb, sdf, mol2, pqr, gro, cif, mmtf등의 3D 분자 가시화를 제공합니다. jsmol 보다 빠른 
+WebGL 기반 분자 가시화 라이브러리로 pdb, sdf, mol2, pqr, gro, cif, mmtf등의 3D 분자 가시화를 제공합니다. jsmol 보다 빠른
 
 ![JSmol](../asset/image/07/ngl.jpg)
 

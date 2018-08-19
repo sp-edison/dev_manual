@@ -14,6 +14,24 @@ Octave 스크립트를 리눅스 Command Line에서 실행하는 방법은 2가�
   - 이 경우 ```chmod +x run.m``` 명령어를 통해 해당 파일에 실행 권한을 줘야 합니다.
 
 
+> [Octave 메뉴얼 번역 프로젝트 링크 ](https://github.com/ptjoker95/Octave_Korean_Translate)
+
+
+# Octave 스크립트 시작
+
+Octave 스크립트를 EDISON에 올리고자 한다면 octave 스크립트 파일 맨 처음에 아래 3줄이 포함 되어있어야 합니다.
+
+```Matlab
+#!/usr/bin/env octave
+
+clear, clc, close all
+texi_macros_file("/dev/null");
+
+...
+```
+``` clear, clc, close all```을 통해 스크립트 실행전 변수, 화면등을 초기화합니다. ```texi_macros_file("/dev/null");```을 통해 makeinfo와 관련된 에러메시지가 발생하지 않도록 설정합니다.
+
+
 # 패키지 설치하기
 
 ```module load octave/4.0.3``` 명령어를 통해 octave 모듈을 추가하면, octave 명령어를 사용할 수 있습니다.
@@ -77,7 +95,9 @@ octave:1>
 ```Matlab
 #!/usr/bin/env octave
 
-clear all;
+clear, clc, close all
+texi_macros_file("/dev/null");
+
 pkg load dataframe;
 
 truc={"Id", "Name", "Type";1, "onestring", "bla"; 2, "somestring", "foobar";}
