@@ -1,6 +1,6 @@
 # OSPPlotViewer
 
-[oneD](../04_Science_App_Programing/02_Output_programing/) 파일 형식을 가시화 해주는 뷰어입니다.
+[oneD](../04_Science_App_Programing/02_Output_programing/03_oneD.md) 파일 형식을 가시화 해주는 뷰어입니다.
 
 
 

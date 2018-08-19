@@ -8,7 +8,7 @@
 ## 범용 분석기
 |이름|설명|
 |--|--|
-|[OSPPlotViewer]()|[oneD](../04_Science_App_Programing/02_Output_programing/) 파일 형식을 가시화하는 뷰어입니다.|
+|[OSPPlotViewer]()|[oneD](../04_Science_App_Programing/02_Output_programing/03_oneD.md) 파일 형식을 가시화하는 뷰어입니다.|
 |[OSPTextViewer]()|Text 결과 파일을 보여주는 뷰어입니다.|
 |[OSPImageViewer]()|JPG, PNG등 이미지 파일을 보여주는 뷰어입니다.|
 |[OSPHtmlViewer]()|Html 파일을 보여주는 뷰어입니다.|

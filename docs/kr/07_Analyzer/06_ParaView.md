@@ -8,7 +8,7 @@
 
 ![paraview](../asset/image/07/paraview2.jpg)
 Animation 을 활용하기 위해서는 각 프래임 별로 vtk 파일을 생성해야하며, <파일명>.<프래임>.<확장자> 형태의 파일 이름을 가져야 합니다.
-- [Animation 기능을 사용하기 위한 파파일이름 규칙](https://www.paraview.org/Wiki/Animating_legacy_VTK_file_series)
+- [Animation 기능을 사용하기 위한 파일이름 규칙](https://www.paraview.org/Wiki/Animating_legacy_VTK_file_series)
 
 
 ![paraview](../asset/image/07/paraview.gif)
