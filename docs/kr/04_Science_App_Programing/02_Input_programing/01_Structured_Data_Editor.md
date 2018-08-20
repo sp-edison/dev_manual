@@ -24,8 +24,8 @@ SDE를 자신의 시뮬레이션 SW에 활용하고 싶다면, SDE에서 생성�
 
  |KEY	|VALUE| KEY	| VALUE|
  |--|--|--|--|
- |value delimiter|	SPACE|Vector vracket|	SQUARE_SPACE|
- |line delimiter|	NULL|Vector delimiter|	SPACE|
+ |value delimiter|SPACE|Vector vracket|SQUARE_SPACE|
+ |line delimiter|NULL|Vector delimiter|SPACE|
 
 생성된 입력 파일은 다음과 같습니다.
 
@@ -40,8 +40,8 @@ SDE를 자신의 시뮬레이션 SW에 활용하고 싶다면, SDE에서 생성�
 
  |KEY	|VALUE| KEY	| VALUE|
  |--|--|--|--|
- |value delimiter|	EQUAL |Vector vracket|	SQUARE_SPACE|
- |line delimiter|	SEMICOLON |Vector delimiter|	SPACE|
+ |value delimiter|EQUAL |Vector vracket|SQUARE_SPACE|
+ |line delimiter|SEMICOLON |Vector delimiter|SPACE|
 
 
 생성된 입력 파일은 다음과 같습니다.

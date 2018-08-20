@@ -4,7 +4,7 @@
 시뮬레이션 SW의 실행 방식은 명령행 인자(Command Line Argument) 방식을 따르며, ```./[실행 파일 명] [커맨드 옵션] [인풋 파일의 절대 경로]``` 형태로 실행해야 합니다.
 
 - 실행 파일 이름이 a.out이고 입력 옵션이 “-i”로 설정한 경우 실행되는 명령어는 다음과 같습니다.
-```linux
+```bash
 $ ./a.out –i /home/user1/data/input.dat
 ```
 언어별 예제 보기
@@ -31,8 +31,7 @@ $ ./a.out –i /home/user1/data/input.dat
   - [C](../03_C/02_Multi_Inputfile_Open.md)
   - [Fortran](../04_Fortran/02_Multi_Inputfile_Open.md)
   - [Python](../05_Python/02_Multi_Inputfile_Open.md)
-  - [R]()
-  - [Octave]()
+  - [R](../06_R/02_Multi_Inputfile_Open.md)
 
 
 3개 이상인 경우에도 서로 다른 입력 옵션을 정하고 이를 받을 수 있도록 코드를 작성하면 된다.

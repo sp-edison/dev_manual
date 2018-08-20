@@ -29,3 +29,12 @@ export LD_LIBRARY_PATH=/SYSTEM/lapack/3.8.0/lib:$LD_LIBRARY_PATH
 ```
 
 > ```ldd``` 명령어를 통해 지정한 프로그램이 요구하는 공유 라이브러리(shared libraries)를 출력하는 명령어입니다. 이 명령어를 통해 찾지 못한 공유 라이브러리를 확인 미리 확인 할 수 있습니다.
+
+
+window에서 simrc 파일을 작성하는 경우 개행문자 방식이 unix 개열과 달라 에러가 발생할 수 있습니다.
+
+윈도우 환경에서는 다음과 같은 방법으로 수정가능합니다.
+
+Sublime text3 의 경우 Preferences -> Setting -> User 에 아래 명령어 추가
+
+> "default_line_ending": "unix
