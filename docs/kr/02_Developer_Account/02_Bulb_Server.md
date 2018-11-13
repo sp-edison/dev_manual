@@ -43,9 +43,17 @@
 
 #### Mac OS Terminal로 bulb 접속하기  (ssh)
 
-터미널 실행 후 아래 커멘드 입력
+터미널 접속 후 아래 커멘드 입력
 
 ```
 ssh -o ProxyCommand='nc -x access.edison.re.kr:8325 %h %p' [User_id]@bulb.edison.re.kr -p 22002
 ```
 **[User_id]** 부분의 본인의 아이디를 입력하고 커멘드 실행
+
+#### Linux Terminal로 bulb 접속하기  (ssh)
+
+##### Cent OS 7
+```connect-proxy``` 설치 후 아래 커멘드 입력
+```
+ssh -o ProxyCommand="connect-proxy -S access.edison.re.kr:8325 %h %p" [User_id]@bulb.edison.re.kr -p 22002
+```
