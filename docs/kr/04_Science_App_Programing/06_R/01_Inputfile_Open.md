@@ -13,7 +13,7 @@ Bulb 서버에 접속 후 아래 명령어를 실행하면, 해당 소스코드�
 > - [git 설치하기](https://git-scm.com/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EC%84%A4%EC%B9%98)
 
 ```bash
-$  git clone https://github.com/sp-edison/octave_example_input1.git
+$  git clone https://github.com/sp-edison/r_example_input1.git
 ```
 
 다운로드가 완료되면, ```r_example_input1``` 폴더가 생성됩니다. 폴더 구성은 다음과 같습니다.
